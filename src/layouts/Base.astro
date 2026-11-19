@@ -1,0 +1,6 @@
+---
+import f from '../content/festival.json';
+import '../styles/global.css';
+const {title=f.displayName}=Astro.props;
+---
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="robots" content="noindex,nofollow"/><meta name="description" content={f.tagline}/><title>{title} | {f.institutionName}</title></head><body><a class="skip" href="#main">Skip to content</a><div class="preview">A FIRST LOOK · Programme, date & registration details are provisional</div><header><a class="brand" href="/">Plexus<span>THE MEDICAL COLLECTIVE</span></a><nav aria-label="Main navigation"><a href="/events/">Events</a><a href="/schedule/">Schedule</a><a href="/visit/">Visit</a><a href="/#about">Our story</a></nav><a class="button small" href="/events/">Explore the programme ↗</a></header><main id="main"><slot/></main><footer><div class="brand">{f.displayName}</div><p>{f.institutionName}</p><p>A meeting of curious minds. A new chapter in medicine.</p><hr/><p>Registration will continue on Google Forms when available. No participant data is collected here.</p><small>Preview · Updated November 2026</small></footer></body></html>

@@ -1,0 +1,184 @@
+[
+  {
+    "slug": "prana-raksha",
+    "title": "Prana Raksha",
+    "subtitle": "Basic Life Support",
+    "track": "workshop",
+    "art": "12",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "shastrakriya",
+    "title": "Shastrakriya",
+    "subtitle": "Basic Surgical Skills",
+    "track": "workshop",
+    "art": "13",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "janani-raksha",
+    "title": "Janani Raksha",
+    "subtitle": "Obstetric Emergencies",
+    "track": "workshop",
+    "art": "14",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "jeeva-raksha",
+    "title": "Jeeva Raksha",
+    "subtitle": "Basic Trauma Life Support",
+    "track": "workshop",
+    "art": "15",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "hridaya-naada",
+    "title": "Hridaya Naada",
+    "subtitle": "The Art of Auscultation",
+    "track": "workshop",
+    "art": "16",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "hridaya-rekha",
+    "title": "Hridaya Rekha",
+    "subtitle": "ECG Interpretation",
+    "track": "workshop",
+    "art": "17",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "navaprana",
+    "title": "Navaprana",
+    "subtitle": "Neonatal Resuscitation",
+    "track": "workshop",
+    "art": "18",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "antardrishti",
+    "title": "Antardrishti",
+    "subtitle": "X-ray Interpretation",
+    "track": "workshop",
+    "art": "19",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "anusandhana",
+    "title": "Anusandhana",
+    "subtitle": "Scientific Paper Presentation",
+    "track": "academic",
+    "art": "22",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "chitrabodha",
+    "title": "Chitrabodha",
+    "subtitle": "Scientific Poster Presentation",
+    "track": "academic",
+    "art": "22",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "roganveshana",
+    "title": "Roganveshana",
+    "subtitle": "Clinical Case Presentation",
+    "track": "academic",
+    "art": "22",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "dhishana",
+    "title": "Dhishana",
+    "subtitle": "Medical Quiz",
+    "track": "academic",
+    "art": "22",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "vyadhi-vedha",
+    "title": "Vyadhi Vedha",
+    "subtitle": "Dare to Diagnose",
+    "track": "academic",
+    "art": "22",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  },
+  {
+    "slug": "shabdabheda",
+    "title": "Shabdabheda",
+    "subtitle": "Medical Crossword",
+    "track": "academic",
+    "art": "22",
+    "registration": {
+      "status": "pending",
+      "url": null
+    },
+    "fee": null,
+    "eligibility": null
+  }
+]

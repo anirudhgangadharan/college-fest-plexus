@@ -1,0 +1,11 @@
+/References images/
+
+node_modules/
+dist/
+.astro/
+.env
+
+.vercel/
+*.log
+.env.*
+!.env.example

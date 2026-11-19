@@ -1,0 +1,7 @@
+---
+import Base from '../../layouts/Base.astro';
+import events from '../../content/events.json';
+export function getStaticPaths(){return events.map(event=>({params:{slug:event.slug},props:{event}}))}
+const {event:e}=Astro.props;
+---
+<Base title={e.title}><section class="detail"><div><a href="/events/">← All events</a><p class="eyebrow">{e.track} / PROVISIONAL PROGRAMME</p><h1>{e.title}</h1><p class="intro">{e.subtitle}</p><dl><dt>Schedule</dt><dd>Time to be announced · Asia/Kolkata</dd><dt>Eligibility</dt><dd>{e.eligibility || 'To be announced'}</dd><dt>Fees</dt><dd>{e.fee || 'To be announced'}</dd><dt>Venue</dt><dd>To be announced</dd></dl><div class="notice"><h2>{e.registration.status === "closed" ? "Registration closed" : e.registration.status === "open" ? "Join the experience" : "Registration details coming soon"}</h2>{e.registration.status === "open" && e.registration.url && <a class="button" href={e.registration.url}>Register on Google Forms ↗</a>}<p>Registration will continue on Google Forms once details are confirmed. This preview does not reserve a place.</p></div></div><img src={'/art/'+e.art+'.webp'} alt={'Illustration accompanying '+e.title} width="800" height="962"/></section></Base>
