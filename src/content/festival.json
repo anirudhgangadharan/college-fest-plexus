@@ -1,6 +1,17 @@
 {
-  "displayName": "Plexus 2026",
-  "institutionName": "KH Patil Institution of Medical Sciences",
-  "date": "14 December 2026",
-  "tagline": "Where knowledge intertwines, the future of medicine unfolds."
+  "name": "Plexus '27",
+  "displayName": "Plexus '27",
+  "subtitle": "State Level Undergraduate Conference",
+  "institutionName": "K. H. Patil Institute of Medical Sciences, Gadag",
+  "date": "5, 6 & 7 January 2027",
+  "dateShort": "5–7 Jan 2027",
+  "tagline": "The blend of Talent",
+  "theme": "A Convergence of Ideas",
+  "email": "plexusconference@gmail.com",
+  "address": "Mallasamudra, Mulgund Road, Gadag, Karnataka – 582103",
+  "earlyBirdDeadline": "12 December 2026, 11:59 PM IST",
+  "lateBirdFrom": "13 December 2026, 12:00 AM IST",
+  "fees": { "delegate": 500, "culturalOnly": 200, "workshopEarly": 200, "workshopLate": 300 },
+  "accommodation": "Complimentary accommodation for the first 25 registered delegates. For other arrangements, see the accommodation link in the brochure.",
+  "links": { "website": null, "whatsapp": null, "instagram": null }
 }

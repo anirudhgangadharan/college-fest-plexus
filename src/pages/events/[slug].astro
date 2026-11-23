@@ -1,7 +1,16 @@
 ---
 import Base from '../../layouts/Base.astro';
+import FormButton from '../../components/FormButton.astro';
 import events from '../../content/events.json';
+import reg from '../../content/registration.json';
 export function getStaticPaths(){return events.map(event=>({params:{slug:event.slug},props:{event}}))}
 const {event:e}=Astro.props;
+const img=e.art?`/art/${e.art}.webp`:e.img?`/brochure/${e.img}.webp`:null;
+const form=reg.forms[e.form];
 ---
-<Base title={e.title}><section class="detail"><div><a href="/events/">← All events</a><p class="eyebrow">{e.track} / PROVISIONAL PROGRAMME</p><h1>{e.title}</h1><p class="intro">{e.subtitle}</p><dl><dt>Schedule</dt><dd>Time to be announced · Asia/Kolkata</dd><dt>Eligibility</dt><dd>{e.eligibility || 'To be announced'}</dd><dt>Fees</dt><dd>{e.fee || 'To be announced'}</dd><dt>Venue</dt><dd>To be announced</dd></dl><div class="notice"><h2>{e.registration.status === "closed" ? "Registration closed" : e.registration.status === "open" ? "Join the experience" : "Registration details coming soon"}</h2>{e.registration.status === "open" && e.registration.url && <a class="button" href={e.registration.url}>Register on Google Forms ↗</a>}<p>Registration will continue on Google Forms once details are confirmed. This preview does not reserve a place.</p></div></div><img src={'/art/'+e.art+'.webp'} alt={'Illustration accompanying '+e.title} width="800" height="962"/></section></Base>
+<Base title={e.title+' · Plexus \'27'} desc={e.subtitle+'. '+e.tagline}><section class="wrap detail"><div class="d-main"><a class="back" href="/events/">← All events</a><p class="eyebrow">{e.subtitle}</p><h1>{e.title}</h1><p class="tag">“{e.tagline}”</p><p class="lead">{e.about}</p>
+{e.pack&&<p class="note"><b>Combo Pack {String(e.pack).padStart(2,'0')}</b> · {e.session}. Workshops are booked as a combo; one student can register for each combo only.</p>}
+<h2 class="h3">{e.leadIn}</h2><ul class="list">{e.items.map(i=><li>{i}</li>)}</ul>
+{e.rules&&e.rules.length>0&&<><h2 class="h3">Integrity</h2><ul class="list">{e.rules.map(i=><li>{i}</li>)}</ul></>}
+{e.contacts&&e.contacts.length>0&&<><h2 class="h3">Contact for queries</h2><ul class="contacts">{e.contacts.map(c=><li><span>{c.name}</span><a href={'tel:'+c.phone.replace(/\s/g,'')}>{c.phone}</a></li>)}</ul></>}</div>
+<aside class="d-side">{img&&<img src={img} alt={'Illustration for '+e.title} width="600" height="700"/>}<dl><dt>When</dt><dd>{e.when}</dd><dt>Fee</dt><dd>{e.fee}</dd>{e.prize&&<><dt>Prizes</dt><dd>{e.prize}</dd></>}<dt>Venue</dt><dd>K. H. Patil Institute of Medical Sciences, Gadag</dd></dl><div class="reg-box"><p class="eyebrow">{form.label}</p><FormButton form={e.form}/><p class="small">One Google Form covers this whole category.</p></div></aside></section></Base>

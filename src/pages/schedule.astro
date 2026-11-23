@@ -1,5 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import f from '../content/festival.json';
+import sched from '../content/schedule.json';
 ---
-<Base title="Schedule"><section><p class="eyebrow">PLAN YOUR EXPERIENCE</p><h1>A day of<br/><em>possibility.</em></h1><p class="intro">{f.date} · Provisional · Asia/Kolkata</p><div class="notice"><h2>The programme is taking shape.</h2><p>Session times, duration and locations are being confirmed. The final schedule will be published here.</p></div><a class="button" href="/events/">Explore the proposed events ↗</a></section></Base>
+<Base title="Schedule · Plexus '27"><section class="wrap pagehead"><p class="eyebrow">5, 6 &amp; 7 January 2027</p><h1>Schedule</h1><p class="lead">Day one is hands-on, day two is academic, day three is the celebration.</p></section>
+{sched.map(d=><section class="wrap day"><div class="day-h"><p class="daynum">Day {d.day}</p><h2>{d.title}</h2><p>{d.date} · {d.sub}</p></div><ol class="slots">{d.slots.map(([t,w])=><li><time>{t}</time><span>{w}</span></li>)}</ol></section>)}
+<section class="wrap"><p class="note">Timings follow the brochure. Workshop combos, morning and afternoon sessions are listed on each <a href="/events/#workshop">workshop page</a>.</p></section></Base>

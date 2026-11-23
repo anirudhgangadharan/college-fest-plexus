@@ -87,3 +87,17 @@ Owner reviews the six documents. Incorporate feedback before beginning Phase 1. 
 ## Verified implementation — 19 November 2026
 
 Astro installed with exact dependency and package-lock.json. Static home/catalog/14 details/schedule/visit/404 built successfully (19 pages). Content validation and two registration-integrity tests passed. All generated internal links and image references resolve. Build requires ASTRO_TELEMETRY_DISABLED=1 in the restricted environment. Browser, accessibility, responsive, performance and external-form verification remain unperformed. See README current limitations; the original roadmap remains pending where not covered by this evidence.
+
+# Update — 23 November 2026 (brochure rebuild)
+
+Owner instruction (WhatsApp, 23 Nov 2026): the Canva brochure (54 pages) is the approved source of truth for name, dates, content and design; the earlier site was a first draft. Design in DESIGN.md is superseded by the brochure look (parchment, gold frames, blackletter headings, brochure illustrations).
+
+Implemented and locally verified (`npm run check`, `npm test`, `npm run build`, headless Chrome screenshots at 1280 px and 390 px):
+- Plexus '27, 5, 6 & 7 January 2027, K. H. Patil Institute of Medical Sciences, Gadag (src/content/festival.json).
+- 19 events in 4 tracks (src/content/events.json), schedule (schedule.json), committee (people.json).
+- /register/ page (fees, workshop combos, forms) and a Register Now dialog with a no-JS fallback link.
+- One Google Form per category in src/content/registration.json. All `url` values are null until real forms exist; buttons show "Form opens soon".
+- /about/ with framed photo placeholders for committee members (director photo is from the brochure).
+
+Open items: real Google Form URLs, abstract submission link, committee photos, brochure asset originals (some brochure illustrations are screenshots or older repo exports), website/Instagram/WhatsApp links (blank in the brochure), accommodation link/QR, verify the Day 2 vs Day 3 cultural listing with organisers, quiz prize pool (₹5,000 on its page, ₹20,000 category total).
+Not verified: Vercel deployment settings; keyboard and screen reader audit beyond basic dialog/focus behaviour.

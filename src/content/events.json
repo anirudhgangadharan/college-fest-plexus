@@ -1,184 +1,672 @@
 [
-  {
-    "slug": "prana-raksha",
-    "title": "Prana Raksha",
-    "subtitle": "Basic Life Support",
-    "track": "workshop",
-    "art": "12",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "shastrakriya",
-    "title": "Shastrakriya",
-    "subtitle": "Basic Surgical Skills",
-    "track": "workshop",
-    "art": "13",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "janani-raksha",
-    "title": "Janani Raksha",
-    "subtitle": "Obstetric Emergencies",
-    "track": "workshop",
-    "art": "14",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "jeeva-raksha",
-    "title": "Jeeva Raksha",
-    "subtitle": "Basic Trauma Life Support",
-    "track": "workshop",
-    "art": "15",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "hridaya-naada",
-    "title": "Hridaya Naada",
-    "subtitle": "The Art of Auscultation",
-    "track": "workshop",
-    "art": "16",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "hridaya-rekha",
-    "title": "Hridaya Rekha",
-    "subtitle": "ECG Interpretation",
-    "track": "workshop",
-    "art": "17",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "navaprana",
-    "title": "Navaprana",
-    "subtitle": "Neonatal Resuscitation",
-    "track": "workshop",
-    "art": "18",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "antardrishti",
-    "title": "Antardrishti",
-    "subtitle": "X-ray Interpretation",
-    "track": "workshop",
-    "art": "19",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "anusandhana",
-    "title": "Anusandhana",
-    "subtitle": "Scientific Paper Presentation",
-    "track": "academic",
-    "art": "22",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "chitrabodha",
-    "title": "Chitrabodha",
-    "subtitle": "Scientific Poster Presentation",
-    "track": "academic",
-    "art": "22",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "roganveshana",
-    "title": "Roganveshana",
-    "subtitle": "Clinical Case Presentation",
-    "track": "academic",
-    "art": "22",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "dhishana",
-    "title": "Dhishana",
-    "subtitle": "Medical Quiz",
-    "track": "academic",
-    "art": "22",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "vyadhi-vedha",
-    "title": "Vyadhi Vedha",
-    "subtitle": "Dare to Diagnose",
-    "track": "academic",
-    "art": "22",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  },
-  {
-    "slug": "shabdabheda",
-    "title": "Shabdabheda",
-    "subtitle": "Medical Crossword",
-    "track": "academic",
-    "art": "22",
-    "registration": {
-      "status": "pending",
-      "url": null
-    },
-    "fee": null,
-    "eligibility": null
-  }
+ {
+  "slug": "prana-raksha",
+  "category": "workshop",
+  "title": "Prana Raksha",
+  "subtitle": "Basic Life Support",
+  "art": "12",
+  "tagline": "Be the difference between life and death in those first critical minutes",
+  "about": "Emergencies don’t wait for an ambulance. This workshop prepares participants to respond quickly and confidently to life-threatening situations, combining hands-on skill training with practical emergency management sessions, in line with current international resuscitation guidelines.",
+  "leadIn": "Hands-on training",
+  "items": [
+   "Scene safety and primary assessment",
+   "CPR and AED",
+   "Hemorrhage control",
+   "Choking management",
+   "Emergency management: heart attack, trauma, stroke, snake bite"
+  ],
+  "contacts": [
+   {
+    "name": "Karthik P M",
+    "phone": "+91 6363221079"
+   },
+   {
+    "name": "Shwetha Hemadri",
+    "phone": "+91 9353481367"
+   },
+   {
+    "name": "Milind D Patil",
+    "phone": "+91 8660465511"
+   }
+  ],
+  "pack": 1,
+  "session": "Morning session",
+  "form": "workshops",
+  "fee": "Combo pack: ₹200 early bird (till 12 Dec 2026, 11:59 PM IST), ₹300 late bird from 13 Dec",
+  "when": "Day 1 · 5 January 2027"
+ },
+ {
+  "slug": "shastrakriya",
+  "category": "workshop",
+  "title": "Shastrakriya",
+  "subtitle": "Basic Surgical Skills",
+  "art": "13",
+  "tagline": "Steady hands, sharp skills: where every great surgeon begins",
+  "about": "Every surgeon’s journey starts with mastering the fundamentals. This hands-on workshop introduces participants to the core techniques of wound closure and tissue handling, with guided practice on suturing pads and models under expert supervision.",
+  "leadIn": "Hands-on training",
+  "items": [
+   "Suturing techniques: handle instruments correctly and practise common patterns (simple interrupted, continuous running, vertical and horizontal mattress, subcuticular)",
+   "Knotting techniques: build speed and precision in tying secure knots"
+  ],
+  "contacts": [
+   {
+    "name": "Suhas V K",
+    "phone": "+91 8050498432"
+   },
+   {
+    "name": "Srujan Kasbegoudar",
+    "phone": "+91 7676856640"
+   },
+   {
+    "name": "Sonu M Sanaboo",
+    "phone": "+91 8904637548"
+   }
+  ],
+  "pack": 2,
+  "session": "Morning session",
+  "form": "workshops",
+  "fee": "Combo pack: ₹200 early bird (till 12 Dec 2026, 11:59 PM IST), ₹300 late bird from 13 Dec",
+  "when": "Day 1 · 5 January 2027"
+ },
+ {
+  "slug": "janani-raksha",
+  "category": "workshop",
+  "title": "Janani Raksha",
+  "subtitle": "Obstetric Emergencies",
+  "art": "14",
+  "tagline": "Safe motherhood begins with skilled hands and sharp clinical judgment",
+  "about": "Childbirth is a moment of joy, but it can turn critical within minutes. This workshop equips participants with essential skills in labour management and the handling of common obstetric emergencies, through simulation-based training.",
+  "leadIn": "Hands-on training and sessions",
+  "items": [
+   "AMTSL (Active Management of Third Stage of Labour)",
+   "Partogram: how to plot and interpret it",
+   "PPH (Postpartum Haemorrhage): a stepwise approach",
+   "Pre-eclampsia management: identify it, its severe features and management"
+  ],
+  "contacts": [
+   {
+    "name": "Ranjan S N",
+    "phone": "+91 9353469991"
+   },
+   {
+    "name": "Shashank Kalburgi",
+    "phone": "+91 6361869072"
+   },
+   {
+    "name": "Priyadarshini",
+    "phone": "+91 9008058105"
+   }
+  ],
+  "pack": 3,
+  "session": "Morning session",
+  "form": "workshops",
+  "fee": "Combo pack: ₹200 early bird (till 12 Dec 2026, 11:59 PM IST), ₹300 late bird from 13 Dec",
+  "when": "Day 1 · 5 January 2027"
+ },
+ {
+  "slug": "jeeva-raksha",
+  "category": "workshop",
+  "title": "Jeeva Raksha",
+  "subtitle": "Basic Trauma Life Support",
+  "art": "15",
+  "tagline": "In trauma, the first hour decides the outcome. Act fast, act right",
+  "about": "Trauma is a leading cause of death and disability among young people, and early, systematic care can save lives before the patient reaches hospital. This workshop trains participants in the structured assessment and stabilization of injured patients, following BTLS principles, through demonstrations, scenario-based learning, and hands-on skill stations.",
+  "leadIn": "Hands-on training and sessions",
+  "items": [
+   "Scene size-up and safety",
+   "Primary survey (xABCDE approach)",
+   "Airway management and spinal precautions",
+   "Haemorrhage control and shock management",
+   "Chest and abdominal trauma",
+   "Splinting and immobilization",
+   "Log roll, extrication and safe transport",
+   "Secondary survey and scenario practice"
+  ],
+  "contacts": [
+   {
+    "name": "Ranjitha D M",
+    "phone": "+91 8296280645"
+   },
+   {
+    "name": "Nikita D Naik",
+    "phone": "+91 8660902970"
+   },
+   {
+    "name": "Eesha R Madoddi",
+    "phone": "+91 9019628205"
+   }
+  ],
+  "pack": 4,
+  "session": "Morning session",
+  "form": "workshops",
+  "fee": "Combo pack: ₹200 early bird (till 12 Dec 2026, 11:59 PM IST), ₹300 late bird from 13 Dec",
+  "when": "Day 1 · 5 January 2027"
+ },
+ {
+  "slug": "hridaya-naada",
+  "category": "workshop",
+  "title": "Hridaya Naada",
+  "subtitle": "The Art of Auscultation",
+  "art": "16",
+  "tagline": "Listen closely: the heart tells its own story",
+  "about": "Auscultation is one of the most valuable bedside skills in clinical medicine, and it begins with recognizing what a normal heart sounds like. This workshop trains participants to identify normal and abnormal heart sounds and murmurs, using audio simulations, manikins, and case-based discussion.",
+  "leadIn": "Hands-on training and sessions",
+  "items": [
+   "Basics of cardiac auscultation",
+   "Normal heart sounds",
+   "Added heart sounds",
+   "Cardiac murmurs"
+  ],
+  "contacts": [
+   {
+    "name": "Karthik P M",
+    "phone": "+91 6363221079"
+   },
+   {
+    "name": "Shwetha Hemadri",
+    "phone": "+91 9353481367"
+   },
+   {
+    "name": "Milind D Patil",
+    "phone": "+91 8660465511"
+   }
+  ],
+  "pack": 1,
+  "session": "Afternoon session",
+  "form": "workshops",
+  "fee": "Combo pack: ₹200 early bird (till 12 Dec 2026, 11:59 PM IST), ₹300 late bird from 13 Dec",
+  "when": "Day 1 · 5 January 2027"
+ },
+ {
+  "slug": "hridaya-rekha",
+  "category": "workshop",
+  "title": "Hridaya Rekha",
+  "subtitle": "ECG Interpretation",
+  "art": "17",
+  "tagline": "Decode the rhythm: every heartbeat leaves a trace",
+  "about": "The ECG is one of the quickest and most powerful tools for diagnosing cardiac emergencies, and reading it well is a skill every doctor needs. This workshop teaches a simple, systematic approach to interpreting the 12-lead ECG, using annotated tracings, rhythm strips, and case-based discussion.",
+  "leadIn": "Hands-on training and sessions",
+  "items": [
+   "ECG basics and lead placement",
+   "Systematic approach to ECG reading",
+   "Normal ECG and axis determination",
+   "Ischaemia and myocardial infarction",
+   "Electrolyte disturbances and other conditions",
+   "ECG case practice"
+  ],
+  "contacts": [
+   {
+    "name": "Suhas V K",
+    "phone": "+91 8050498432"
+   },
+   {
+    "name": "Srujan Kasbegoudar",
+    "phone": "+91 7676856640"
+   },
+   {
+    "name": "Sonu M Sanaboo",
+    "phone": "+91 8904637548"
+   }
+  ],
+  "pack": 2,
+  "session": "Afternoon session",
+  "form": "workshops",
+  "fee": "Combo pack: ₹200 early bird (till 12 Dec 2026, 11:59 PM IST), ₹300 late bird from 13 Dec",
+  "when": "Day 1 · 5 January 2027"
+ },
+ {
+  "slug": "navaprana",
+  "category": "workshop",
+  "title": "Navaprana",
+  "subtitle": "Neonatal Resuscitation",
+  "art": "18",
+  "tagline": "The first minute of life, the most important minute of a lifetime",
+  "about": "Most newborns transition smoothly to life outside the womb, but some need immediate help to breathe. This workshop trains participants in the essential steps of newborn resuscitation, following the Neonatal Resuscitation Program (NRP) and Helping Babies Breathe principles, with hands-on practice on neonatal mannequins.",
+  "leadIn": "Hands-on training and sessions",
+  "items": [
+   "Preparation and rapid assessment",
+   "Initial steps of newborn care",
+   "Positive pressure ventilation (PPV)",
+   "Chest compressions",
+   "Advanced support overview",
+   "Post-resuscitation care and teamwork"
+  ],
+  "contacts": [
+   {
+    "name": "Ranjan S N",
+    "phone": "+91 9353469991"
+   },
+   {
+    "name": "Shashank Kalburgi",
+    "phone": "+91 6361869072"
+   },
+   {
+    "name": "Priyadarshini",
+    "phone": "+91 9008058105"
+   }
+  ],
+  "pack": 3,
+  "session": "Afternoon session",
+  "form": "workshops",
+  "fee": "Combo pack: ₹200 early bird (till 12 Dec 2026, 11:59 PM IST), ₹300 late bird from 13 Dec",
+  "when": "Day 1 · 5 January 2027"
+ },
+ {
+  "slug": "antardrishti",
+  "category": "workshop",
+  "title": "Antardrishti",
+  "subtitle": "X-ray Interpretation",
+  "art": "19",
+  "tagline": "See beyond the shadows: every film has a story to tell",
+  "about": "The X-ray is often the first investigation ordered in clinical practice, and reading one systematically can reveal diagnoses that change management within minutes. This workshop teaches a structured approach to interpreting common radiographs, using annotated films, spot diagnoses, and case-based discussion.",
+  "leadIn": "Hands-on training and sessions",
+  "items": [
+   "Basics of radiography",
+   "Systematic approach to chest X-ray",
+   "Common chest X-ray findings",
+   "Abdominal X-ray",
+   "Bone and joint X-ray"
+  ],
+  "contacts": [
+   {
+    "name": "Ranjitha D M",
+    "phone": "+91 8296280645"
+   },
+   {
+    "name": "Nikita D Naik",
+    "phone": "+91 8660902970"
+   },
+   {
+    "name": "Eesha R Madoddi",
+    "phone": "+91 9019628205"
+   }
+  ],
+  "pack": 4,
+  "session": "Afternoon session",
+  "form": "workshops",
+  "fee": "Combo pack: ₹200 early bird (till 12 Dec 2026, 11:59 PM IST), ₹300 late bird from 13 Dec",
+  "when": "Day 1 · 5 January 2027"
+ },
+ {
+  "slug": "anusandhana",
+  "category": "academic",
+  "title": "Anusandhana",
+  "subtitle": "Scientific Paper Presentation",
+  "art": null,
+  "tagline": "Medicine advances not merely through what we know, but through what we dare to question",
+  "about": "From curiosity to investigation, and from evidence to innovation, every breakthrough begins with a question. Anusandhana is a platform for aspiring medical researchers to present their scientific work, challenge established perspectives and share discoveries that contribute to the future of healthcare.",
+  "leadIn": "Guidelines",
+  "items": [
+   "Stage 1, abstract submission (deadline 12 Dec 2026, 11:59 PM): mandatory for preliminary screening; maximum 500 words",
+   "Sections: Title, Introduction, Objectives, Methodology, Results and Conclusion, key words",
+   "First page must include event name, research title and authors",
+   "Times New Roman (title 18 bold, main text 12); PDF only; file name “Research Paper – Short Title”",
+   "IEC clearance certificate must be uploaded separately",
+   "Abstracts are reviewed by faculty and shortlisted finalists are notified",
+   "Stage 2, presentation: 8 minutes plus 2 minutes Q&A; maximum 20 slides; Times New Roman mandatory",
+   "Report one hour before the event; submit the PowerPoint on a pen drive"
+  ],
+  "rules": [
+   "Plagiarism is strictly prohibited and leads to immediate disqualification",
+   "The decision of the judges is final"
+  ],
+  "prize": "First ₹3,000 · Second ₹2,000 · Pool ₹5,000",
+  "fee": "Abstract submission free · shortlisted participants pay the Basic Delegate fee (₹500)",
+  "when": "Day 2 · 6 January 2027 · 9:00 AM – 12:00 PM",
+  "contacts": [
+   {
+    "name": "Karthik P M",
+    "phone": "+91 6363221079"
+   },
+   {
+    "name": "Anirudh G",
+    "phone": "+91 73069 68374"
+   },
+   {
+    "name": "Ranjitha D M",
+    "phone": "+91 82962 80645"
+   }
+  ],
+  "form": "abstracts",
+  "img": null
+ },
+ {
+  "slug": "chitrabhoda",
+  "category": "academic",
+  "title": "Chitrabhoda",
+  "subtitle": "Scientific Poster Presentation",
+  "art": null,
+  "tagline": "Every discovery has a story. Every observation holds a possibility",
+  "about": "A platform for aspiring medical professionals to turn scientific knowledge, clinical experiences and research findings into compelling visual presentations. Simplify complex concepts and let your research speak through visual storytelling.",
+  "leadIn": "Guidelines",
+  "items": [
+   "Format: 3 ft (W) × 4 ft (H), portrait only; landscape or oversized prints are disqualified",
+   "Original research: Title, Authors/Affiliation, Introduction, Methodology, Results, Discussion, Conclusion, key references (3–5)",
+   "Case report: Title, Authors/Affiliation, Introduction, Case Presentation, Discussion, Conclusion, References",
+   "Readable from 4–6 ft with sans-serif fonts (title 72–90 pt, headings 36–48 pt, body 24–28 pt or more); 300–500 words; high-resolution graphs (300 DPI)",
+   "Ethics and blind judging: mask patient eyes and identifying features (consent mandatory), mention the IEC approval number for research, omit college logos and names from the poster body",
+   "Timing: 5 minutes presentation plus 2 minutes Q&A; report 30 minutes early to mount the poster"
+  ],
+  "rules": [],
+  "prize": "First ₹3,000 · Second ₹2,000 · Pool ₹5,000",
+  "fee": "Abstract submission free · shortlisted participants pay the Basic Delegate fee (₹500)",
+  "when": "Day 2 · 6 January 2027 · 9:00 AM – 12:00 PM",
+  "contacts": [
+   {
+    "name": "Ranjan S N",
+    "phone": "+91 93534 69991"
+   },
+   {
+    "name": "Siddarodh D Angur",
+    "phone": "+91 63643 20137"
+   },
+   {
+    "name": "Eesha R Madoddi",
+    "phone": "+91 90196 28205"
+   }
+  ],
+  "form": "abstracts",
+  "img": null
+ },
+ {
+  "slug": "roganveshana",
+  "category": "academic",
+  "title": "Roganveshana",
+  "subtitle": "Clinical Case Presentation",
+  "art": null,
+  "tagline": "Every patient tells a story. Every symptom offers a clue",
+  "about": "A platform for aspiring doctors to showcase clinical acumen, diagnostic reasoning and problem-solving through compelling case presentations. Demonstrate the art of thinking like a clinician.",
+  "leadIn": "Guidelines",
+  "items": [
+   "Stage 1, abstract submission (deadline 12 Dec 2026, 11:59 PM): Introduction, History, Examination Findings, Investigations, Provisional and Differential Diagnosis, Discussion",
+   "Maximum 500 words; PDF only; Times New Roman; title 14 pt, main text 12 pt; line spacing 1.5",
+   "Abstracts are reviewed by faculty and shortlisted participants are notified in advance",
+   "Stage 2, presentation: 7 minutes plus 2 minutes Q&A; report one hour before the event",
+   "Cover patient particulars, presenting complaints, clinical findings, differential diagnosis, investigations, management and clinical course",
+   "Patient-identifying information must not be disclosed",
+   "Evaluated on: history and examination, diagnostic approach, interpretation of investigations, management, presentation skills, response to questions"
+  ],
+  "rules": [
+   "Plagiarism is strictly prohibited and leads to immediate disqualification",
+   "The decision of the judges is final"
+  ],
+  "prize": "First ₹3,000 · Second ₹2,000 · Pool ₹5,000",
+  "fee": "Abstract submission free · shortlisted participants pay the Basic Delegate fee (₹500)",
+  "when": "Day 2 · 6 January 2027 · 9:00 AM – 12:00 PM",
+  "contacts": [
+   {
+    "name": "Kavyaa Bansal",
+    "phone": "+91 99458 11200"
+   },
+   {
+    "name": "Lekana R V",
+    "phone": "+91 97318 39028"
+   },
+   {
+    "name": "Kartik Alimatti",
+    "phone": "+91 86184 49541"
+   }
+  ],
+  "form": "abstracts",
+  "img": null
+ },
+ {
+  "slug": "dhishana",
+  "category": "academic",
+  "title": "Dhishana",
+  "subtitle": "The Medical Quiz",
+  "art": null,
+  "tagline": "Think fast. Think smart. Think medicine",
+  "about": "Challenge your knowledge, test your instincts and claim the crown. Rounds include clinical case challenges, rapid fire, visual diagnosis, audio-visual identification, medical puzzles and buzzer rounds.",
+  "leadIn": "Format and eligibility",
+  "items": [
+   "Open to all medical students",
+   "Team of 2 (maximum 1 CRRI per team); inter-college teams allowed",
+   "Preliminary round: a common screening round open to all participating teams",
+   "Grand finale: the top 5 teams qualify for the final showdown"
+  ],
+  "rules": [],
+  "prize": "Prize pool ₹5,000",
+  "fee": "Registration free",
+  "when": "Day 2 · 6 January 2027 · 1:30 – 4:00 PM (prelims + main round)",
+  "contacts": [],
+  "form": "quiz",
+  "img": null
+ },
+ {
+  "slug": "natyam",
+  "category": "cultural",
+  "title": "Natyam",
+  "subtitle": "Solo Dance",
+  "art": null,
+  "tagline": "Every style has a rhythm. Every step tells a story",
+  "about": "Natyam celebrates the art of dance in all its forms. Express yourself through movement, rhythm and storytelling, and bring your individual style to the stage. All dance styles are welcome: classical, folk, contemporary, Western, hip-hop, fusion and freestyle.",
+  "leadIn": "Rules and guidelines",
+  "items": [
+   "Solo performances only",
+   "Maximum 5 minutes per performance",
+   "Audio in MP3 format, submitted by the stipulated deadline"
+  ],
+  "rules": [],
+  "prize": "First ₹2,000 · Second ₹1,000",
+  "fee": "Included with the Basic Delegate Pass (₹500). Cultural-only pass: ₹200",
+  "when": "Day 2 · 6 January 2027 · from 4:15 PM",
+  "contacts": [
+   {
+    "name": "Nivritti Jain",
+    "phone": "+91 95097 10460"
+   },
+   {
+    "name": "Siddarodh D Angur",
+    "phone": "+91 63643 20137"
+   },
+   {
+    "name": "Siddu N K",
+    "phone": "+91 80883 21992"
+   }
+  ],
+  "form": "cultural",
+  "img": "cultural"
+ },
+ {
+  "slug": "nrithya",
+  "category": "cultural",
+  "title": "Nrithya",
+  "subtitle": "Group / Duet Dance",
+  "art": null,
+  "tagline": "One beat, many hearts: when a team moves as one, the stage comes alive",
+  "about": "Open to duet and group performances in any style: classical, folk, contemporary, Western, hip-hop, fusion and freestyle. Judged on thematic choreography, creative formations, and music and presentation.",
+  "leadIn": "Rules and guidelines",
+  "items": [
+   "2 to 10 members per team",
+   "Maximum 6 minutes per performance",
+   "Audio in MP3 format, submitted by the stipulated deadline",
+   "Props must be safe; teams place and remove them promptly",
+   "Vulgar or offensive content, lyrics or gestures lead to disqualification",
+   "Fire, water or hazardous materials are strictly prohibited"
+  ],
+  "rules": [],
+  "prize": "First ₹2,500 · Second ₹1,500",
+  "fee": "Included with the Basic Delegate Pass (₹500). Cultural-only pass: ₹200",
+  "when": "Day 2 · 6 January 2027 · from 4:15 PM",
+  "contacts": [
+   {
+    "name": "Nivritti Jain",
+    "phone": "+91 95097 10460"
+   },
+   {
+    "name": "Siddarodh D Angur",
+    "phone": "+91 63643 20137"
+   },
+   {
+    "name": "Siddu N K",
+    "phone": "+91 80883 21992"
+   }
+  ],
+  "form": "cultural",
+  "img": "cultural"
+ },
+ {
+  "slug": "swara",
+  "category": "cultural",
+  "title": "Swara",
+  "subtitle": "Solo Singing",
+  "art": null,
+  "tagline": "Your voice. Your story. Your stage",
+  "about": "A celebration of melody, expression and musical individuality. All singing styles and genres are welcome: classical (Carnatic and Hindustani), semi-classical, light music, film, folk, devotional and Western.",
+  "leadIn": "Rules and guidelines",
+  "items": [
+   "Solo performances only",
+   "Maximum 5 minutes",
+   "Karaoke, backing tracks, instruments or a cappella are all fine",
+   "Backing tracks in MP3 format at least 3 days before the event"
+  ],
+  "rules": [],
+  "prize": "First ₹2,000 · Second ₹1,000",
+  "fee": "Included with the Basic Delegate Pass (₹500). Cultural-only pass: ₹200",
+  "when": "Day 2 · 6 January 2027 · from 4:15 PM",
+  "contacts": [
+   {
+    "name": "Nivritti Jain",
+    "phone": "+91 95097 10460"
+   },
+   {
+    "name": "Siddarodh D Angur",
+    "phone": "+91 63643 20137"
+   },
+   {
+    "name": "Siddu N K",
+    "phone": "+91 80883 21992"
+   }
+  ],
+  "form": "cultural",
+  "img": "cultural"
+ },
+ {
+  "slug": "medicos-got-talent",
+  "category": "cultural",
+  "title": "Medicos Got Talent",
+  "subtitle": "Spotlight",
+  "art": null,
+  "tagline": "Beyond the books. Beyond the stethoscope",
+  "about": "A stage for every talent. From mesmerising melodies and captivating monoacts to mind-blowing magic and extraordinary artistic expression, bring your hidden talents to the spotlight.",
+  "leadIn": "Categories",
+  "items": [
+   "Instrumental music",
+   "Monoact and mimicry",
+   "Stand-up comedy",
+   "Poetry and spoken word",
+   "Magic and illusion",
+   "Beatboxing and rap",
+   "Painting and live sketching (rules to be announced)"
+  ],
+  "rules": [],
+  "prize": "Attractive prizes",
+  "fee": "Included with the Basic Delegate Pass (₹500). Cultural-only pass: ₹200",
+  "when": "Day 2 · 6 January 2027 · from 4:15 PM",
+  "contacts": [
+   {
+    "name": "Nivritti Jain",
+    "phone": "+91 95097 10460"
+   },
+   {
+    "name": "Siddarodh D Angur",
+    "phone": "+91 63643 20137"
+   },
+   {
+    "name": "Siddu N K",
+    "phone": "+91 80883 21992"
+   }
+  ],
+  "form": "cultural",
+  "img": "cultural"
+ },
+ {
+  "slug": "the-laughing-prescription",
+  "category": "online",
+  "title": "The Laughing Prescription",
+  "subtitle": "Medical Meme Making · Online",
+  "art": null,
+  "tagline": "A dose of wit, a prescription for laughter",
+  "about": "Turn the quirks of medical life into humour. Create relatable, witty and original memes inspired by medicine, medical education and campus life.",
+  "leadIn": "Rules and guidelines",
+  "items": [
+   "Individual participation only",
+   "Memes must be original and created by the participant",
+   "Content must be medically relevant and appropriate",
+   "Offensive, derogatory or plagiarised content is prohibited",
+   "Submit in JPEG or PNG format"
+  ],
+  "rules": [],
+  "prize": "Exciting prizes",
+  "fee": "Free registration",
+  "when": "Online submission",
+  "contacts": [
+   {
+    "name": "Kartik Alimatti",
+    "phone": "+91 86184 49541"
+   }
+  ],
+  "form": "online",
+  "img": "online-meme"
+ },
+ {
+  "slug": "frames-of-healing",
+  "category": "online",
+  "title": "Frames of Healing",
+  "subtitle": "Medical Photography · Online",
+  "art": null,
+  "tagline": "Every frame tells a story; every moment holds a meaning",
+  "about": "Capture the world of medicine through your lens. Showcase the beauty, emotion, science and untold stories of healthcare through a single compelling photograph.",
+  "leadIn": "Rules and guidelines",
+  "items": [
+   "Individual participation only",
+   "Photographs must be original and captured by the participant",
+   "Basic editing is permitted",
+   "Patient privacy and consent must be strictly maintained",
+   "Submit in JPEG format"
+  ],
+  "rules": [],
+  "prize": "Exciting prizes",
+  "fee": "Free registration",
+  "when": "Online submission",
+  "contacts": [
+   {
+    "name": "Kartik Alimatti",
+    "phone": "+91 86184 49541"
+   }
+  ],
+  "form": "online",
+  "img": "online-photo"
+ },
+ {
+  "slug": "the-moving-medley",
+  "category": "online",
+  "title": "The Moving Medley",
+  "subtitle": "Medical Reel Making · Online",
+  "art": null,
+  "tagline": "Roll the camera, tell your story",
+  "about": "Transform your ideas into engaging short videos. Blend creativity, storytelling and medical perspectives to educate, entertain and leave a lasting impression.",
+  "leadIn": "Rules and guidelines",
+  "items": [
+   "Individual or team participation",
+   "Maximum duration 60 seconds",
+   "Reels must be original and medically relevant",
+   "Creative editing, transitions and appropriate background music are encouraged",
+   "Misleading, offensive or inappropriate content is prohibited",
+   "Submit in MP4 format"
+  ],
+  "rules": [],
+  "prize": "Exciting prizes",
+  "fee": "Free registration",
+  "when": "Online submission",
+  "contacts": [
+   {
+    "name": "Kartik Alimatti",
+    "phone": "+91 86184 49541"
+   }
+  ],
+  "form": "online",
+  "img": "online-reel"
+ }
 ]

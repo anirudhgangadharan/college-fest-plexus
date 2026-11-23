@@ -1,0 +1,14 @@
+{
+  "director": { "name": "Dr. Basavaraj P. Bommanahalli", "role": "Director, KHPIMS Gadag" },
+  "chairs": [
+    { "name": "Dr. Rekha Sonavane", "role": "Organizing Chairperson", "detail": "Principal, K. H. Patil Institute of Medical Sciences, Gadag" },
+    { "name": "Dr. Mahantesh Patil", "role": "Organizing Co-Chairperson", "detail": "Head of Department, Orthopaedics" }
+  ],
+  "committees": [
+    { "committee": "Cultural Committee", "members": [
+      { "name": "Dr. Shruti Bhavi Patil", "role": "Associate Prof. & Unit Chief, OBGY" },
+      { "name": "Dr. Samata Padaki", "role": "Head of Department, Physiology" } ] },
+    { "committee": "Academic Committee", "members": [
+      { "name": "Dr. Aravind Karinagannavar", "role": "Vice Principal, KHPIMS Gadag" } ] }
+  ]
+}
