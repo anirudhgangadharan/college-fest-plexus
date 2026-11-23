@@ -8,7 +8,7 @@ const nav=[['/','Home'],['/events/','Events'],['/schedule/','Schedule'],['/regis
 const options=[['Delegate Pass','₹500','/register/#delegate'],['Workshop Combos','₹200 early','/register/#workshops'],['Paper · Poster · Case','Abstracts free','/register/#presentations'],['Medical Quiz','Free','/register/#quiz'],['Cultural Events','With pass','/register/#culturals'],['Online Competitions','Free','/register/#online']];
 ---
 <!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={desc}/><meta name="theme-color" content="#2b170e"/><meta property="og:title" content={title}/><meta property="og:description" content={desc}/><link rel="icon" href="/brochure/emblem.webp"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@500;700&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/><title>{title}</title></head>
-<body><a class="skip" href="#main">Skip to content</a>
+<body data-page={path}><a class="skip" href="#main">Skip to content</a>
 <header class="top"><a class="brand" href="/"><img src="/brochure/emblem.webp" alt="" width="44" height="44"/><span><b>PLEXUS '27</b><small>The blend of Talent</small></span></a>
 <nav aria-label="Main navigation" id="nav">{nav.map(([h,l])=><a href={h} aria-current={(h==='/'?path==='/':path.startsWith(h))?'page':undefined}>{l}</a>)}</nav>
 <button class="menu" aria-expanded="false" aria-controls="nav" id="menu">Menu</button>

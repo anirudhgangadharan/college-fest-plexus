@@ -25,3 +25,8 @@ Individual image files served by the authorized Canva viewer were downloaded, vi
 - p53: Magadi bird cutout 1599 x 1073; Kappatagudda and Gadag Zoo each 799 x 536. The bird image is brochure artwork, not asserted to be a location photograph. Basaveshwara cutout reused for Bhishma Kere.
 
 No Canva edits, shares or account changes. No new destinations or QR links added. Full-quality print originals were not available from this viewer. Source files are bundled locally, not hotlinked to expiring viewer URLs.
+
+## Hero watermark follow-up
+Page headers use a decorative, pointer-inert Canva image at 10% opacity, with a left-edge fade to keep text clear. Events and Schedule use the p5 medical motif, About the institute illustration, Visit the travel-building illustration, Registration and event-detail introductions the Plexus emblem. Home keeps its existing hero art and uses the emblem at 10%. On Visit, a second faint statue sits to the right of the accommodation note, interpreting the unmarked follow-up screenshot as the same request. These decorations add no information or links and are CSS backgrounds, not screen-reader content.
+
+The second follow-up reduces About/Visit section padding to 38px on desktop and 30px on mobile, narrows committee gaps, and adds a 10% temple silhouette between the two full-opacity travel illustrations. The accommodation-side decoration is hidden on narrow phones, where there is no genuine side space. Registration's source emblem has a radial edge fade to avoid a faint rectangular image boundary.

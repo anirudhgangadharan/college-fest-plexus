@@ -90,3 +90,34 @@ dialog{border:1px solid #bc9657;border-radius:24px;background:#f3e7cf;box-shadow
 .director .frame.oval img{width:100%;height:100%;object-fit:contain;object-position:center bottom}
 
 @media(max-width:700px){.top{position:relative}.hero{min-height:70vh}.top nav.open{padding-block:6px}}
+
+/* Page-specific brochure watermarks, requested at approximately 10% opacity. */
+.pagehead{position:relative;isolation:isolate;--page-art:url('/brochure/emblem.webp')}
+.pagehead:after{content:"";position:absolute;z-index:-1;pointer-events:none;right:20px;top:22px;width:43%;height:calc(100% + 46px);max-height:360px;background:var(--page-art) center right/contain no-repeat;opacity:.1;mask-image:linear-gradient(90deg,transparent,#000 35%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%)}
+body[data-page='/events/'] .pagehead{--page-art:url('/brochure/medical-motif.webp')}
+body[data-page='/events/'] .pagehead:after{width:55%;max-height:340px;top:30px;background-size:contain}
+body[data-page='/about/'] .pagehead{--page-art:url('/brochure/institute.webp')}
+body[data-page='/visit/'] .pagehead{--page-art:url('/brochure/reach-building.webp')}
+body[data-page='/schedule/'] .pagehead{--page-art:url('/brochure/medical-motif.webp')}
+body[data-page='/schedule/'] .pagehead:after{width:50%}
+body[data-page='/register/'] .pagehead:after{width:35%;top:0}
+.accommodation-art{position:relative;isolation:isolate}.accommodation-art:after{content:"";position:absolute;z-index:-1;pointer-events:none;right:28px;top:0;bottom:-28px;width:34%;opacity:.1;background:url('/brochure/basaveshwara.webp') right center/contain no-repeat;mask-image:linear-gradient(90deg,transparent,#000 45%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 45%)}
+.hero-emblem{opacity:.1;width:260px;top:10%;right:5%;border-radius:0;filter:none}
+.d-main{position:relative;isolation:isolate}.d-main:before{content:"";position:absolute;z-index:-1;pointer-events:none;right:-15px;top:35px;width:230px;height:260px;background:url('/brochure/emblem.webp') center/contain no-repeat;opacity:.1;mask-image:linear-gradient(90deg,transparent,#000);-webkit-mask-image:linear-gradient(90deg,transparent,#000)}
+@media(max-width:700px){.pagehead:after{right:12px;top:30px;width:55%!important;height:220px;opacity:.1;mask-image:linear-gradient(90deg,transparent,#000 65%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 65%)}body[data-page='/events/'] .pagehead:after,body[data-page='/schedule/'] .pagehead:after{width:85%!important;top:42px;height:180px}.accommodation-art:after{right:16px;width:40%;top:-20px;bottom:0;opacity:.1}.hero-emblem{display:block;width:160px;top:6%;right:-20px;opacity:.1}.d-main:before{width:170px;height:220px;right:0}}
+/* Reduce dead air between brochure blocks; leave room around their content. */
+body[data-page='/about/'] main>.wrap:not(.pagehead),body[data-page='/visit/'] main>.wrap:not(.pagehead){padding-top:38px;padding-bottom:38px}
+body[data-page='/about/'] .two{gap:28px;align-items:center}
+body[data-page='/about/'] .two .frame-img{max-height:390px}
+body[data-page='/about/'] .chairs,body[data-page='/about/'] .members{gap:28px}
+body[data-page='/about/'] .sub{margin-top:32px}
+.visit-art{position:relative;isolation:isolate;grid-template-columns:1fr 200px;gap:24px}
+.visit-art:after{content:"";position:absolute;z-index:-1;pointer-events:none;left:42%;right:12%;top:8%;bottom:0;background:url('/brochure/veeranarayana.webp') center/contain no-repeat;opacity:.1}
+body[data-page='/visit/'] .visit-art{padding-top:0!important;padding-bottom:16px!important}
+body[data-page='/visit/'] .reach{padding-block:16px!important}
+body[data-page='/visit/'] .accommodation-art{padding-top:20px!important;padding-bottom:28px!important}
+@media(max-width:700px){body[data-page='/about/'] main>.wrap:not(.pagehead),body[data-page='/visit/'] main>.wrap:not(.pagehead){padding-block:30px}.visit-art{grid-template-columns:1fr 90px;gap:12px}.visit-art:after{left:35%;right:10%}body[data-page='/about/'] .two{gap:22px}body[data-page='/about/'] .two .frame-img{max-height:320px}.accommodation-art:after{display:none}}
+/* Feather the rectangular source edges into the parchment. */
+body[data-page='/register/'] .pagehead:after{mask-image:radial-gradient(ellipse,#000 28%,transparent 73%);-webkit-mask-image:radial-gradient(ellipse,#000 28%,transparent 73%)}
+.d-main:before{mask-image:radial-gradient(ellipse,#000 10%,transparent 72%);-webkit-mask-image:radial-gradient(ellipse,#000 10%,transparent 72%)}
+.hero-emblem{mask-image:radial-gradient(ellipse,#000 24%,transparent 72%);-webkit-mask-image:radial-gradient(ellipse,#000 24%,transparent 72%)}
