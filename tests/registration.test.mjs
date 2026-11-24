@@ -10,7 +10,7 @@ test('registration covers all events once, in the four approved workshop pairs',
   assert.deepEqual(g.map(x=>x.items.length),[4,4,4,3]);
   assert.equal(g.flatMap(x=>x.items.flatMap(i=>i.eventSlugs)).length,events().length);
   assert.deepEqual(g[0].items.map(x=>x.eventSlugs.length),[2,2,2,2]);
-  assert.ok(g[0].items.every(i=>i.registrationUrl===null && i.detailsUrl===null));
+  assert.ok(g[0].items.every(i=>i.registrationUrl===null && i.detailsUrl?.startsWith('/events/')));
 });
 test('date labels agree with event details and use the approved January dates',()=>{
   const g=groups(); const all=events();
@@ -31,6 +31,6 @@ test('invalid references, duplicate IDs, impossible dates and unsafe destination
   ]) {const g=groups();mutate(g);assert.throws(()=>validateRegistrationGroups(g,events()));}
 });
 test('individual Google Forms and site-relative details can be configured later',()=>{
-  const g=groups();g[0].items[0].registrationUrl='https://forms.gle/example';g[0].items[0].detailsUrl='/events/prana-raksha/';
+  const g=groups();g[0].items[0].registrationUrl='https://forms.gle/example';g[0].items[0].detailsUrl='/events/basic-life-support-heart-sounds/';
   assert.doesNotThrow(()=>validateRegistrationGroups(g,events()));
 });

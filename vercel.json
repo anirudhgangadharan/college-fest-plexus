@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    { "source": "/events/prana-raksha", "destination": "/events/basic-life-support-heart-sounds/", "permanent": true },
+    { "source": "/events/hridaya-naada", "destination": "/events/basic-life-support-heart-sounds/", "permanent": true },
+    { "source": "/events/shastrakriya", "destination": "/events/basic-surgical-skills-ecg-interpretation/", "permanent": true },
+    { "source": "/events/hridaya-rekha", "destination": "/events/basic-surgical-skills-ecg-interpretation/", "permanent": true },
+    { "source": "/events/janani-raksha", "destination": "/events/obstetric-emergencies-neonatal-resuscitation/", "permanent": true },
+    { "source": "/events/navaprana", "destination": "/events/obstetric-emergencies-neonatal-resuscitation/", "permanent": true },
+    { "source": "/events/jeeva-raksha", "destination": "/events/basic-trauma-life-support-x-ray-interpretation/", "permanent": true },
+    { "source": "/events/antardrishti", "destination": "/events/basic-trauma-life-support-x-ray-interpretation/", "permanent": true }
+  ]
+}

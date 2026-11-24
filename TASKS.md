@@ -1,5 +1,13 @@
 # Current scoped update — 24 November 2026
 
+## Workshop consolidation — 24 November 2026
+
+- [x] Replace eight standalone workshop routes and cards with four scientific-name combo pages.
+- [x] Remove Sanskrit workshop titles from public workshop content.
+- [x] Point registration and schedule links at the combined pages and configure permanent redirects from all eight legacy URLs.
+- [x] Verify content checks, 7 tests, 23-page build, generated routes and internal links.
+- [ ] Verify GitHub push and production deployment.
+
 Authorization: owner approved both mockups, Source Serif 4 sitewide, blank View Details targets, implementation, GitHub push and Vercel publication. Broader upgrade deferred.
 
 Implemented: homepage arrival dialog; 15-card registration directory; independent null destinations for each action; fees page preserved; single local font family; corrected event date labels/schedule; native dialog dismissal/focus return; mobile menu Escape/focus return; registration content integrity tests.

@@ -2,7 +2,7 @@
  {
   "slug": "prana-raksha",
   "category": "workshop",
-  "title": "Prana Raksha",
+  "title": "Basic Life Support",
   "subtitle": "Basic Life Support",
   "art": "12",
   "tagline": "Be the difference between life and death in those first critical minutes",
@@ -38,7 +38,7 @@
  {
   "slug": "shastrakriya",
   "category": "workshop",
-  "title": "Shastrakriya",
+  "title": "Basic Surgical Skills",
   "subtitle": "Basic Surgical Skills",
   "art": "13",
   "tagline": "Steady hands, sharp skills: where every great surgeon begins",
@@ -71,7 +71,7 @@
  {
   "slug": "janani-raksha",
   "category": "workshop",
-  "title": "Janani Raksha",
+  "title": "Obstetric Emergencies",
   "subtitle": "Obstetric Emergencies",
   "art": "14",
   "tagline": "Safe motherhood begins with skilled hands and sharp clinical judgment",
@@ -106,7 +106,7 @@
  {
   "slug": "jeeva-raksha",
   "category": "workshop",
-  "title": "Jeeva Raksha",
+  "title": "Basic Trauma Life Support",
   "subtitle": "Basic Trauma Life Support",
   "art": "15",
   "tagline": "In trauma, the first hour decides the outcome. Act fast, act right",
@@ -145,7 +145,7 @@
  {
   "slug": "hridaya-naada",
   "category": "workshop",
-  "title": "Hridaya Naada",
+  "title": "Heart Sounds (The Art of Auscultation)",
   "subtitle": "The Art of Auscultation",
   "art": "16",
   "tagline": "Listen closely: the heart tells its own story",
@@ -180,7 +180,7 @@
  {
   "slug": "hridaya-rekha",
   "category": "workshop",
-  "title": "Hridaya Rekha",
+  "title": "ECG Interpretation",
   "subtitle": "ECG Interpretation",
   "art": "17",
   "tagline": "Decode the rhythm: every heartbeat leaves a trace",
@@ -217,7 +217,7 @@
  {
   "slug": "navaprana",
   "category": "workshop",
-  "title": "Navaprana",
+  "title": "Neonatal Resuscitation",
   "subtitle": "Neonatal Resuscitation",
   "art": "18",
   "tagline": "The first minute of life, the most important minute of a lifetime",
@@ -254,7 +254,7 @@
  {
   "slug": "antardrishti",
   "category": "workshop",
-  "title": "Antardrishti",
+  "title": "X-ray Interpretation",
   "subtitle": "X-ray Interpretation",
   "art": "19",
   "tagline": "See beyond the shadows: every film has a story to tell",

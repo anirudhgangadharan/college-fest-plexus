@@ -6,13 +6,13 @@
     "items": [
       {
         "id": "basic-life-support-heart-sounds",
-        "title": "Basic Life Support + Heart Sounds",
+        "title": "Basic Life Support + Heart Sounds (The Art of Auscultation)",
         "eventSlugs": [
           "prana-raksha",
           "hridaya-naada"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/basic-life-support-heart-sounds/"
       },
       {
         "id": "basic-surgical-skills-ecg",
@@ -22,7 +22,7 @@
           "hridaya-rekha"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/basic-surgical-skills-ecg-interpretation/"
       },
       {
         "id": "obstetric-emergencies-neonatal",
@@ -32,17 +32,17 @@
           "navaprana"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/obstetric-emergencies-neonatal-resuscitation/"
       },
       {
         "id": "trauma-life-support-x-ray",
-        "title": "Basic Trauma Life Support + X Ray Interpretation",
+        "title": "Basic Trauma Life Support + X-ray Interpretation",
         "eventSlugs": [
           "jeeva-raksha",
           "antardrishti"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/basic-trauma-life-support-x-ray-interpretation/"
       }
     ]
   },
