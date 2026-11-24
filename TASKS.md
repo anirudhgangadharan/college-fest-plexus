@@ -1,5 +1,13 @@
 # Current scoped update — 24 November 2026
 
+## Festival dates and schedule removal — 24 November 2026
+
+- [x] Update festival-wide display dates to 6, 7 & 8 January 2027.
+- [x] Remove Schedule from navigation, footer and homepage; replace homepage schedule preview with event discovery.
+- [x] Remove the generated Schedule page and redirect `/schedule` to `/events/`.
+- [x] Verify content checks, 7 tests, 22-page build, no Schedule route/navigation links, new festival dates and all internal links.
+- [ ] Verify GitHub push and production deployment.
+
 ## Plain-English event titles — 24 November 2026
 
 - [x] Replace legacy academic, cultural and online display names with their descriptive event names.

@@ -1,5 +1,6 @@
 {
   "redirects": [
+    { "source": "/schedule", "destination": "/events/", "permanent": true },
     { "source": "/events/prana-raksha", "destination": "/events/basic-life-support-heart-sounds/", "permanent": true },
     { "source": "/events/hridaya-naada", "destination": "/events/basic-life-support-heart-sounds/", "permanent": true },
     { "source": "/events/shastrakriya", "destination": "/events/basic-surgical-skills-ecg-interpretation/", "permanent": true },

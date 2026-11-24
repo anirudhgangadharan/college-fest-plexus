@@ -5,7 +5,7 @@ import {formatEventDate} from '../lib/registration.mjs';
 import '../styles/global.css';
 const {title=f.displayName+' · '+f.subtitle,desc=f.subtitle+', '+f.institutionName+'. '+f.date+'.'}=Astro.props;
 const path=Astro.url.pathname;
-const nav=[['/','Home'],['/events/','Events'],['/schedule/','Schedule'],['/register/','Registration'],['/about/','About'],['/visit/','Visit Gadag']];
+const nav=[['/','Home'],['/events/','Events'],['/register/','Registration'],['/about/','About'],['/visit/','Visit Gadag']];
 ---
 <!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={desc}/><meta name="theme-color" content="#2b170e"/><meta property="og:title" content={title}/><meta property="og:description" content={desc}/><link rel="icon" href="/brochure/emblem.webp"/><link rel="preload" href="/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin/><title>{title}</title></head>
 <body data-page={path}><a class="skip" href="#main">Skip to content</a>
@@ -14,7 +14,7 @@ const nav=[['/','Home'],['/events/','Events'],['/schedule/','Schedule'],['/regis
 <button class="menu" aria-expanded="false" aria-controls="nav" id="menu">Menu</button>
 <a class="btn gold" href="/register/" data-register>Register Now</a></header>
 <main id="main"><slot/></main>
-<footer><div class="foot-grid"><div><p class="brand-line">PLEXUS '27</p><p>{f.subtitle}<br/>{f.institutionName}</p><p>{f.date}</p></div><div><p class="h">Explore</p><a href="/events/">Events</a><a href="/schedule/">Schedule</a><a href="/registration-fees/">Registration &amp; fees</a><a href="/about/">About &amp; committee</a><a href="/visit/">How to reach</a></div><div><p class="h">Contact</p><a href={'mailto:'+f.email}>{f.email}</a><p>{f.address}</p></div></div><small>© Plexus '27 · K. H. Patil Institute of Medical Sciences, Gadag · Registration happens on Google Forms. This site collects no participant data.</small></footer>
+<footer><div class="foot-grid"><div><p class="brand-line">PLEXUS '27</p><p>{f.subtitle}<br/>{f.institutionName}</p><p>{f.date}</p></div><div><p class="h">Explore</p><a href="/events/">Events</a><a href="/registration-fees/">Registration &amp; fees</a><a href="/about/">About &amp; committee</a><a href="/visit/">How to reach</a></div><div><p class="h">Contact</p><a href={'mailto:'+f.email}>{f.email}</a><p>{f.address}</p></div></div><small>© Plexus '27 · K. H. Patil Institute of Medical Sciences, Gadag · Registration happens on Google Forms. This site collects no participant data.</small></footer>
 {path==='/' && <dialog id="reg" class="registration-popup" aria-labelledby="reg-t" aria-describedby="reg-description">
   <form method="dialog" class="dlg-close"><button aria-label="Close registration popup" autofocus>×</button></form>
   <p class="popup-brand">PLEXUS ’27</p>
