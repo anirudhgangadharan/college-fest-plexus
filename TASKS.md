@@ -7,7 +7,8 @@
 - [x] Remove the generated Schedule page and redirect `/schedule` to `/events/`.
 - [x] Verify content checks, 7 tests, 22-page build, no Schedule route/navigation links, new festival dates and all internal links.
 - [x] Update retained schedule data: remove the empty first day, rename workshop heading, and renumber the remaining days.
-- [ ] Verify GitHub push and production deployment.
+- [x] Push commit `c3767bc` to GitHub branch `codex/registration-pages`.
+- [x] Deploy production build `dpl_C3UakACxTDfhKMMXDojQkAtJfdtL`; verify the live homepage shows 6 · 7 · 8 January 2027, has Explore Events, has no Schedule navigation, and `/schedule` returns a permanent redirect to `/events/`.
 
 ## Plain-English event titles — 24 November 2026
 
