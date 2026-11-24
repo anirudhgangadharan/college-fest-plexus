@@ -11,8 +11,7 @@ validateRegistrationGroups(groups,events);
     <section class="registration-intro" aria-labelledby="registration-heading">
       <h1 id="registration-heading">Register for PLEXUS ’27</h1>
       <span class="registration-rule" aria-hidden="true"></span>
-      <p>Registration links will be added soon.</p>
-      <a class="fees-link" href="/registration-fees/">Delegate passes, fees &amp; registration guidance</a>
+      <p>Select an event below to view its details and registration status.</p>
     </section>
     {groups.map(group=><section class:list={['registration-group',{'online-group':group.id==='online'}]} id={group.id} aria-labelledby={'heading-'+group.id}>
       <h2 id={'heading-'+group.id}><span>{group.title}</span></h2>

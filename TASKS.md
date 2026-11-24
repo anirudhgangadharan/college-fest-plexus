@@ -1,5 +1,12 @@
 # Current scoped update — 24 November 2026
 
+## Registration fees page removal — 24 November 2026
+
+- [x] Remove `/registration-fees/` and its visible links/text.
+- [x] Redirect the former route to `/register/`.
+- [x] Verify content checks, 7 tests, 21-page build, no fees route/links/text, and all internal links.
+- [ ] Verify GitHub push and production deployment.
+
 ## Festival dates and schedule removal — 24 November 2026
 
 - [x] Update festival-wide display dates to 6, 7 & 8 January 2027.

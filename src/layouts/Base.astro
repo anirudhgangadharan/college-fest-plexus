@@ -14,7 +14,7 @@ const nav=[['/','Home'],['/events/','Events'],['/register/','Registration'],['/a
 <button class="menu" aria-expanded="false" aria-controls="nav" id="menu">Menu</button>
 <a class="btn gold" href="/register/" data-register>Register Now</a></header>
 <main id="main"><slot/></main>
-<footer><div class="foot-grid"><div><p class="brand-line">PLEXUS '27</p><p>{f.subtitle}<br/>{f.institutionName}</p><p>{f.date}</p></div><div><p class="h">Explore</p><a href="/events/">Events</a><a href="/registration-fees/">Registration &amp; fees</a><a href="/about/">About &amp; committee</a><a href="/visit/">How to reach</a></div><div><p class="h">Contact</p><a href={'mailto:'+f.email}>{f.email}</a><p>{f.address}</p></div></div><small>© Plexus '27 · K. H. Patil Institute of Medical Sciences, Gadag · Registration happens on Google Forms. This site collects no participant data.</small></footer>
+<footer><div class="foot-grid"><div><p class="brand-line">PLEXUS '27</p><p>{f.subtitle}<br/>{f.institutionName}</p><p>{f.date}</p></div><div><p class="h">Explore</p><a href="/events/">Events</a><a href="/register/">Registration</a><a href="/about/">About &amp; committee</a><a href="/visit/">How to reach</a></div><div><p class="h">Contact</p><a href={'mailto:'+f.email}>{f.email}</a><p>{f.address}</p></div></div><small>© Plexus '27 · K. H. Patil Institute of Medical Sciences, Gadag · Registration happens on Google Forms. This site collects no participant data.</small></footer>
 {path==='/' && <dialog id="reg" class="registration-popup" aria-labelledby="reg-t" aria-describedby="reg-description">
   <form method="dialog" class="dlg-close"><button aria-label="Close registration popup" autofocus>×</button></form>
   <p class="popup-brand">PLEXUS ’27</p>
