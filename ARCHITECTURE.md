@@ -1,3 +1,9 @@
+# Current scoped update — 24 November 2026
+
+The approved registration directory is src/content/registration-events.json. Four groups own ISO date-only dates; each item owns a stable ID, title, eventSlugs, registrationUrl, and detailsUrl. Null destinations render disabled buttons, never empty hrefs or random external links. Each future registrationUrl is validated as HTTPS Google Forms; each detailsUrl must be a site-relative URL. src/lib/registration.mjs validates references/IDs/dates and formats dates in Asia/Kolkata. Existing category forms in registration.json remain separate and power /registration-fees/ and existing event pages. The popup uses native dialog focus containment/Escape, focus return and scroll lock; core content/navigation remain server-rendered without JavaScript. Corrected event dates are reflected in event details and schedule; previous brochure timing data is archived in schedule-before-date-update.json for organizer review, outside public/.
+
+---
+
 # Implementation update — 19 November 2026
 
 The owner authorized implementation. A local Astro static preview is now implemented; public publication remains pending confirmed content and launch authorization. Historical planning statements below are superseded by this update.

@@ -1,24 +1,53 @@
 ---
 import f from '../content/festival.json';
-import reg from '../content/registration.json';
+import groups from '../content/registration-events.json';
+import {formatEventDate} from '../lib/registration.mjs';
 import '../styles/global.css';
 const {title=f.displayName+' · '+f.subtitle,desc=f.subtitle+', '+f.institutionName+'. '+f.date+'.'}=Astro.props;
 const path=Astro.url.pathname;
 const nav=[['/','Home'],['/events/','Events'],['/schedule/','Schedule'],['/register/','Registration'],['/about/','About'],['/visit/','Visit Gadag']];
-const options=[['Delegate Pass','₹500','/register/#delegate'],['Workshop Combos','₹200 early','/register/#workshops'],['Paper · Poster · Case','Abstracts free','/register/#presentations'],['Medical Quiz','Free','/register/#quiz'],['Cultural Events','With pass','/register/#culturals'],['Online Competitions','Free','/register/#online']];
 ---
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={desc}/><meta name="theme-color" content="#2b170e"/><meta property="og:title" content={title}/><meta property="og:description" content={desc}/><link rel="icon" href="/brochure/emblem.webp"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@500;700&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/><title>{title}</title></head>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={desc}/><meta name="theme-color" content="#2b170e"/><meta property="og:title" content={title}/><meta property="og:description" content={desc}/><link rel="icon" href="/brochure/emblem.webp"/><link rel="preload" href="/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin/><title>{title}</title></head>
 <body data-page={path}><a class="skip" href="#main">Skip to content</a>
 <header class="top"><a class="brand" href="/"><img src="/brochure/emblem.webp" alt="" width="44" height="44"/><span><b>PLEXUS '27</b><small>The blend of Talent</small></span></a>
 <nav aria-label="Main navigation" id="nav">{nav.map(([h,l])=><a href={h} aria-current={(h==='/'?path==='/':path.startsWith(h))?'page':undefined}>{l}</a>)}</nav>
 <button class="menu" aria-expanded="false" aria-controls="nav" id="menu">Menu</button>
 <a class="btn gold" href="/register/" data-register>Register Now</a></header>
 <main id="main"><slot/></main>
-<footer><div class="foot-grid"><div><p class="brand-line">PLEXUS '27</p><p>{f.subtitle}<br/>{f.institutionName}</p><p>{f.date}</p></div><div><p class="h">Explore</p><a href="/events/">Events</a><a href="/schedule/">Schedule</a><a href="/register/">Registration &amp; fees</a><a href="/about/">About &amp; committee</a><a href="/visit/">How to reach</a></div><div><p class="h">Contact</p><a href={'mailto:'+f.email}>{f.email}</a><p>{f.address}</p></div></div><small>© Plexus '27 · K. H. Patil Institute of Medical Sciences, Gadag · Registration happens on Google Forms. This site collects no participant data.</small></footer>
-<dialog id="reg" aria-labelledby="reg-t"><form method="dialog" class="dlg-close"><button aria-label="Close">×</button></form><p class="eyebrow">Registration is open soon</p><h2 id="reg-t">Register for Plexus '27</h2><p class="dlg-sub">{f.dateShort} · Gadag. Choose what you want to join.</p><ul class="reg-options">{options.map(([t,s,h])=><li><a href={h}><span>{t}</span><small>{s}</small></a></li>)}</ul><a class="btn gold wide" href="/register/">See all fees &amp; forms</a></dialog>
-<script is:inline>
-const d=document.getElementById('reg'),m=document.getElementById('menu'),n=document.getElementById('nav');
-let last;document.querySelectorAll('[data-register]').forEach(a=>a.addEventListener('click',e=>{if(typeof d.showModal==='function'&&location.pathname!=='/register/'){e.preventDefault();last=a;d.showModal()}}));
-d.addEventListener('click',e=>{if(e.target===d)d.close()});d.addEventListener('close',()=>last&&last.focus());d.querySelectorAll('.reg-options a,.wide').forEach(a=>a.addEventListener('click',()=>d.close()));
-m.addEventListener('click',()=>{const o=n.classList.toggle('open');m.setAttribute('aria-expanded',o)});
-</script></body></html>
+<footer><div class="foot-grid"><div><p class="brand-line">PLEXUS '27</p><p>{f.subtitle}<br/>{f.institutionName}</p><p>{f.date}</p></div><div><p class="h">Explore</p><a href="/events/">Events</a><a href="/schedule/">Schedule</a><a href="/registration-fees/">Registration &amp; fees</a><a href="/about/">About &amp; committee</a><a href="/visit/">How to reach</a></div><div><p class="h">Contact</p><a href={'mailto:'+f.email}>{f.email}</a><p>{f.address}</p></div></div><small>© Plexus '27 · K. H. Patil Institute of Medical Sciences, Gadag · Registration happens on Google Forms. This site collects no participant data.</small></footer>
+{path==='/' && <dialog id="reg" class="registration-popup" aria-labelledby="reg-t" aria-describedby="reg-description">
+  <form method="dialog" class="dlg-close"><button aria-label="Close registration popup" autofocus>×</button></form>
+  <p class="popup-brand">PLEXUS ’27</p>
+  <div class="popup-ornament" aria-hidden="true">✦</div>
+  <h2 id="reg-t">Register Now</h2>
+  <p id="reg-description">Choose your event. Join the experience.</p>
+  <ul class="popup-dates">
+    <li><strong>Workshops</strong><span> · {formatEventDate(groups[0].date)}</span></li>
+    <li><strong>Academics &amp; Culturals</strong><span> · {formatEventDate(groups[1].date)}</span></li>
+    <li><strong>Online Events</strong><span> · {formatEventDate(groups[3].date)}</span></li>
+  </ul>
+  <a class="popup-register" href="/register/">Register Now</a>
+  <p class="popup-caption">Explore events and registration options.</p>
+</dialog>}
+<script>
+const dialog = document.querySelector<HTMLDialogElement>('#reg');
+const menu = document.querySelector<HTMLButtonElement>('#menu');
+const nav = document.querySelector<HTMLElement>('#nav');
+if (dialog && typeof dialog.showModal === 'function') {
+  const returnTarget = document.querySelector<HTMLElement>('[data-register]');
+  const close = () => dialog.close();
+  dialog.addEventListener('click', event => { if(event.target === dialog) { const rect=dialog.getBoundingClientRect(); if(event.clientX<rect.left || event.clientX>rect.right || event.clientY<rect.top || event.clientY>rect.bottom) close(); }});
+  dialog.addEventListener('close', () => { document.documentElement.classList.remove('registration-modal-open'); returnTarget?.focus({preventScroll:true}); });
+  dialog.showModal();
+  document.documentElement.classList.add('registration-modal-open');
+}
+if(menu && nav) {
+  menu.hidden=false;
+  const closeMenu = () => {nav.classList.remove('open');menu.setAttribute('aria-expanded','false');};
+  menu.addEventListener('click', () => {const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
+  document.addEventListener('keydown', event => {if(event.key==='Escape' && nav.classList.contains('open')) {closeMenu();menu.focus();}});
+  nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+}
+</script>
+<noscript><style>.top .menu{display:none}.top nav{display:flex;position:static;flex-wrap:wrap;width:100%}.top{flex-wrap:wrap}</style></noscript>
+</body></html>

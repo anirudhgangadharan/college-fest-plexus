@@ -1,0 +1,169 @@
+[
+  {
+    "id": "workshops",
+    "title": "Workshops",
+    "date": "2027-01-06",
+    "items": [
+      {
+        "id": "basic-life-support-heart-sounds",
+        "title": "Basic Life Support + Heart Sounds",
+        "eventSlugs": [
+          "prana-raksha",
+          "hridaya-naada"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "basic-surgical-skills-ecg",
+        "title": "Basic Surgical Skills + ECG Interpretation",
+        "eventSlugs": [
+          "shastrakriya",
+          "hridaya-rekha"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "obstetric-emergencies-neonatal",
+        "title": "Obstetric Emergencies + Neonatal Resuscitation",
+        "eventSlugs": [
+          "janani-raksha",
+          "navaprana"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "trauma-life-support-x-ray",
+        "title": "Basic Trauma Life Support + X Ray Interpretation",
+        "eventSlugs": [
+          "jeeva-raksha",
+          "antardrishti"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      }
+    ]
+  },
+  {
+    "id": "academics",
+    "title": "Academics",
+    "date": "2027-01-07",
+    "items": [
+      {
+        "id": "research-paper",
+        "title": "Research Paper Presentation",
+        "eventSlugs": [
+          "anusandhana"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "poster",
+        "title": "Poster Presentation",
+        "eventSlugs": [
+          "chitrabhoda"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "clinical-case",
+        "title": "Clinical Case Presentation",
+        "eventSlugs": [
+          "roganveshana"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "medical-quiz",
+        "title": "Medical Quiz",
+        "eventSlugs": [
+          "dhishana"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      }
+    ]
+  },
+  {
+    "id": "culturals",
+    "title": "Culturals",
+    "date": "2027-01-07",
+    "items": [
+      {
+        "id": "solo-dance",
+        "title": "Solo Dance",
+        "eventSlugs": [
+          "natyam"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "duet-group-dance",
+        "title": "Duet & Group Dance",
+        "eventSlugs": [
+          "nrithya"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "solo-singing",
+        "title": "Solo Singing",
+        "eventSlugs": [
+          "swara"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "medicos-got-talent",
+        "title": "Medicos Got Talent",
+        "eventSlugs": [
+          "medicos-got-talent"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      }
+    ]
+  },
+  {
+    "id": "online",
+    "title": "Online Events",
+    "date": "2027-01-07",
+    "items": [
+      {
+        "id": "medical-meme-making",
+        "title": "Medical Meme Making",
+        "eventSlugs": [
+          "the-laughing-prescription"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "medical-photography",
+        "title": "Medical Photography",
+        "eventSlugs": [
+          "frames-of-healing"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      },
+      {
+        "id": "medical-reel-making",
+        "title": "Medical Reel Making",
+        "eventSlugs": [
+          "the-moving-medley"
+        ],
+        "registrationUrl": null,
+        "detailsUrl": null
+      }
+    ]
+  }
+]

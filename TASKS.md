@@ -1,3 +1,15 @@
+# Current scoped update — 24 November 2026
+
+Authorization: owner approved both mockups, Source Serif 4 sitewide, blank View Details targets, implementation, GitHub push and Vercel publication. Broader upgrade deferred.
+
+Implemented: homepage arrival dialog; 15-card registration directory; independent null destinations for each action; fees page preserved; single local font family; corrected event date labels/schedule; native dialog dismissal/focus return; mobile menu Escape/focus return; registration content integrity tests.
+
+Verified so far: npm ci (0 reported vulnerabilities), content check, initial 27-page build; registration browser reflow at 320/375/390/768/1024/1440, all 15 cards and 30 disabled actions, loaded local font, Escape closes popup and returns focus, mobile menu Escape and focus return. A 320px action-row overflow was found and fixed, then rechecked. Final tests/build and publication evidence follow below.
+
+Pending: organizer-supplied form/detail URLs; confirmed times on corrected dates; 5 January programme; real mobile/Safari/Firefox/screen-reader testing; full broader redesign. No form submissions or accessibility-conformance claim.
+
+---
+
 # Implementation update — 19 November 2026
 
 The owner authorized implementation. A local Astro static preview is now implemented; public publication remains pending confirmed content and launch authorization. Historical planning statements below are superseded by this update.
@@ -101,3 +113,12 @@ Implemented and locally verified (`npm run check`, `npm test`, `npm run build`, 
 
 Open items: real Google Form URLs, abstract submission link, committee photos, brochure asset originals (some brochure illustrations are screenshots or older repo exports), website/Instagram/WhatsApp links (blank in the brochure), accommodation link/QR, verify the Day 2 vs Day 3 cultural listing with organisers, quiz prize pool (₹5,000 on its page, ₹20,000 category total).
 Not verified: Vercel deployment settings; keyboard and screen reader audit beyond basic dialog/focus behaviour.
+
+## Final local verification — 24 November 2026
+
+- npm run check: passed. npm test: 7/7 passed. npm run build: 27 static pages built.
+- Generated output audit: 610 internal links/assets/fragments resolve; one H1 per route; all 15 registration cards and 30 disabled controls present in static HTML; no empty/hash-only action links.
+- Browser: registration checked at 320/375/390/768/1024/1440 CSS px. Local font loaded. Representative fees/catalog/event/schedule/about/visit pages checked at 320 and 1440; long fees heading reflow corrected. Popup Escape/focus return and mobile menu Escape/focus return verified. No captured console errors.
+- No-JS content/navigation verified in generated HTML and noscript styles; full interactive browser JS-disabled testing, physical devices, other browsers, full automated accessibility audit and performance measurements were not performed.
+- Detailed old brochure times for corrected event dates are not reasserted; retained in schedule-before-date-update.json for organizer review.
+- Publishing is authorized, with form/detail destinations deliberately unavailable.

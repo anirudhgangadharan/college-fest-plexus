@@ -1,3 +1,9 @@
+# Current scoped update — 24 November 2026
+
+The owner approved the registration mockups and explicitly authorized implementation plus GitHub/Vercel publication on 24 November 2026. The broader redesign remains deferred. Current identity is PLEXUS ’27, 5–7 January 2027. The approved registration directory contains four workshop combos on 6 January and four academic events, four cultural events, and three online competitions on 7 January. Each card has Register Now and View Details. Both destinations remain null until supplied. The old fees/category-form information is preserved at /registration-fees/. Session times on corrected dates await confirmation; 5 January programme is unspecified. These decisions supersede earlier provisional 2026 content and launch checkpoints below.
+
+---
+
 # Implementation update — 19 November 2026
 
 The owner authorized implementation. A local Astro static preview is now implemented; public publication remains pending confirmed content and launch authorization. Historical planning statements below are superseded by this update.

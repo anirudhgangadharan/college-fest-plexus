@@ -1,17 +1,32 @@
 ---
 import Base from '../layouts/Base.astro';
-import FormButton from '../components/FormButton.astro';
-import f from '../content/festival.json';
+import groups from '../content/registration-events.json';
 import events from '../content/events.json';
-import reg from '../content/registration.json';
-const packs=[['01','Life-saving duo','Prana Raksha + Hridaya Naada','Basic Life Support + The Art of Auscultation'],['02','Surgical & cardiac','Shastrakriya + Hridaya Rekha','Basic Surgical Skills + ECG Interpretation'],['03','Mother & newborn','Janani Raksha + Navaprana','Obstetric Emergencies + Neonatal Resuscitation'],['04','Trauma & imaging','Jeeva Raksha + Antardrishti','Basic Trauma Life Support + X-ray Interpretation']];
-const slug=n=>events.find(e=>e.title===n);
-const block=(ids)=>ids.map(i=>events.find(e=>e.slug===i));
+import {formatEventDate,validateRegistrationGroups} from '../lib/registration.mjs';
+validateRegistrationGroups(groups,events);
 ---
-<Base title="Registration & fees · Plexus '27"><section class="wrap pagehead"><p class="eyebrow">Plexus '27 · {f.dateShort}</p><h1>Registration &amp; Fee</h1><p class="lead">Register once for your delegate pass, then add the events you want. Each category has its own Google Form.</p></section>
-<section class="wrap" id="delegate"><div class="pass-grid"><article class="pass main"><p class="eyebrow">Basic Delegate Registration</p><p class="price">₹500</p><p>Access to workshops, scientific sessions, guest lectures, cultural events, meals and the delegate kit. Complimentary breakfast, lunch and dinner for all registered delegates. Non-transferable.</p><FormButton form="delegate" label="Get the Delegate Pass"/></article><article class="pass"><p class="eyebrow">Cultural Participation Only</p><p class="price">₹200</p><p>All designated cultural events, participation in cultural activities, and meals during the allotted event timings.</p><FormButton form="culturalPass" label="Get the Cultural Pass"/></article></div><p class="note">{f.accommodation} Delegate registration is mandatory for designated events and workshops. Selected competitions and workshops may need separate registration.</p></section>
-<section class="wrap" id="workshops"><p class="eyebrow">Prayogah · Workshops</p><h2>Workshop combo packs</h2><p class="lead">One student can register for each combo only. <b>Early bird ₹200</b> until {f.earlyBirdDeadline}. <b>Late bird ₹300</b> from {f.lateBirdFrom}. Delegate Pass required.</p><div class="pack-grid">{packs.map(([n,t,a,b])=><article class="pack"><p class="eyebrow">Pack {n}</p><h3>{t}</h3><p class="names">{a}</p><p>{b}</p><p class="price sm">₹200 <small>early · ₹300 late</small></p></article>)}</div><FormButton form="workshops" label="Register for a workshop combo"/></section>
-<section class="wrap" id="presentations"><p class="eyebrow">Anveshanam · Scientific sessions</p><h2>Paper, poster and case presentations</h2><p class="lead">Free abstract submission, deadline 12 December 2026, 11:59 PM. Shortlisted participants pay the Basic Delegate fee. Scientific sessions are free with a Delegate Pass.</p><ul class="chips-list">{block(['anusandhana','chitrabhoda','roganveshana']).map(e=><li><a href={'/events/'+e.slug+'/'}>{e.title}<small>{e.subtitle}</small></a></li>)}</ul><FormButton form="abstracts" label="Submit an abstract"/></section>
-<section class="wrap" id="quiz"><p class="eyebrow">Anveshanam</p><h2>Dhishana · Medical Quiz</h2><p class="lead">Free registration. Teams of 2 with at most one CRRI. Prelims and finals on 6 January.</p><FormButton form="quiz" label="Register your team"/></section>
-<section class="wrap" id="culturals"><p class="eyebrow">The Cultural Carnival</p><h2>Cultural events</h2><p class="lead">Free with the ₹500 Delegate Pass. Without one, the Cultural Delegate Pass is ₹200.</p><ul class="chips-list">{block(['natyam','nrithya','swara','medicos-got-talent']).map(e=><li><a href={'/events/'+e.slug+'/'}>{e.title}<small>{e.subtitle}</small></a></li>)}</ul><FormButton form="cultural" label="Register for culturals"/></section>
-<section class="wrap" id="online"><p class="eyebrow">Online competitions</p><h2>Memes, photographs, reels</h2><p class="lead">Free registration. Submit from anywhere.</p><ul class="chips-list">{block(['the-laughing-prescription','frames-of-healing','the-moving-medley']).map(e=><li><a href={'/events/'+e.slug+'/'}>{e.title}<small>{e.subtitle}</small></a></li>)}</ul><FormButton form="online" label="Enter an online competition"/></section></Base>
+<Base title="Register for PLEXUS ’27" desc="Explore workshop combos, academics, culturals and online event registration for PLEXUS ’27.">
+  <div class="registration-directory">
+    <div class="legacy-registration-links"><span id="delegate"></span><span id="presentations"></span><span id="quiz"></span></div>
+    <section class="registration-intro" aria-labelledby="registration-heading">
+      <h1 id="registration-heading">Register for PLEXUS ’27</h1>
+      <span class="registration-rule" aria-hidden="true"></span>
+      <p>Registration links will be added soon.</p>
+      <a class="fees-link" href="/registration-fees/">Delegate passes, fees &amp; registration guidance</a>
+    </section>
+    {groups.map(group=><section class:list={['registration-group',{'online-group':group.id==='online'}]} id={group.id} aria-labelledby={'heading-'+group.id}>
+      <h2 id={'heading-'+group.id}><span>{group.title}</span></h2>
+      <div class="registration-grid">
+        {group.items.map(item=><article class="registration-card" id={item.id}>
+          <h3>{item.title}</h3>
+          <time datetime={group.date}>{formatEventDate(group.date,true)}</time>
+          <div class="registration-actions">
+            {item.registrationUrl ? <a class="register-action" href={item.registrationUrl}>Register Now<span class="sr-only"> for {item.title} on Google Forms</span></a> : <button class="register-action" type="button" disabled aria-label={'Register Now for '+item.title+' — link coming soon'} title="Registration link coming soon">Register Now</button>}
+            {item.detailsUrl ? <a class="details-action" href={item.detailsUrl}>View Details<span class="sr-only"> for {item.title}</span></a> : <button class="details-action" type="button" disabled aria-label={'View Details for '+item.title+' — link coming soon'} title="Details link coming soon">View Details</button>}
+          </div>
+        </article>)}
+      </div>
+    </section>)}
+    <p class="registration-note">Event details and registration links are coming soon. Registration will continue on Google Forms when links are available.</p>
+  </div>
+</Base>

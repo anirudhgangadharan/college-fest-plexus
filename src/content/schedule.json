@@ -1,23 +1,89 @@
 [
-  { "day": 1, "date": "5 January 2027", "title": "The Plexus: Hands On", "sub": "Workshops, practical sessions and assessment", "slots": [
-    ["08:00 – 09:00 AM","Delegate Registration & Breakfast"],
-    ["09:00 – 11:00 AM","Parallel Workshop Sessions 1"],
-    ["11:00 – 11:45 AM","Inaugural Ceremony"],
-    ["11:45 AM – 01:00 PM","Practical Session & Assessment"],
-    ["01:00 – 02:00 PM","Lunch & Networking"],
-    ["02:00 – 03:30 PM","Parallel Workshop Sessions 2"],
-    ["03:30 – 03:45 PM","Refreshment Break"],
-    ["03:45 – 04:30 PM","Practical Session & Assessment"],
-    ["After 04:30 PM","Valedictory & Certificate Distribution"],
-    ["05:30 – 07:00 PM","Dumb Charades"] ] },
-  { "day": 2, "date": "6 January 2027", "title": "The Academic Arena", "sub": "An immersive day of undergraduate medical learning", "slots": [
-    ["08:00 – 08:30 AM","Delegate Registration"],
-    ["09:00 AM – 12:00 PM","Scientific Paper Presentation"],
-    ["09:00 AM – 12:00 PM","Scientific Poster Presentation"],
-    ["09:00 AM – 12:00 PM","Clinical Case Presentation"],
-    ["12:30 – 01:30 PM","Lunch & Networking"],
-    ["01:30 – 04:00 PM","Medical Quiz (Prelims + Main Round)"],
-    ["From 04:15 PM","The Cultural Carnival: Natyam, Nrithya, Swara, Medicos Got Talent"] ] },
-  { "day": 3, "date": "7 January 2027", "title": "The Grand Fiesta", "sub": "College Annual Day & Cultural Night", "slots": [
-    ["Evening","The Celebration: a spectacular evening of music, dance, entertainment and togetherness"] ] }
+  {
+    "day": 1,
+    "date": "5 January 2027",
+    "title": "Programme to be announced",
+    "sub": "Details for this day will be shared when available",
+    "slots": []
+  },
+  {
+    "day": 2,
+    "date": "6 January 2027",
+    "title": "The Plexus: Hands On",
+    "sub": "Workshop combos · Session timings to be announced",
+    "slots": [
+      [
+        "Time to be announced",
+        "Basic Life Support + Heart Sounds"
+      ],
+      [
+        "Time to be announced",
+        "Basic Surgical Skills + ECG Interpretation"
+      ],
+      [
+        "Time to be announced",
+        "Obstetric Emergencies + Neonatal Resuscitation"
+      ],
+      [
+        "Time to be announced",
+        "Basic Trauma Life Support + X Ray Interpretation"
+      ]
+    ]
+  },
+  {
+    "day": 3,
+    "date": "7 January 2027",
+    "title": "Academics, Culturals & Online Events",
+    "sub": "Event timings to be announced",
+    "slots": [
+      [
+        "Time to be announced",
+        "Research Paper Presentation"
+      ],
+      [
+        "Time to be announced",
+        "Poster Presentation"
+      ],
+      [
+        "Time to be announced",
+        "Clinical Case Presentation"
+      ],
+      [
+        "Time to be announced",
+        "Medical Quiz"
+      ],
+      [
+        "Time to be announced",
+        "Solo Dance"
+      ],
+      [
+        "Time to be announced",
+        "Duet & Group Dance"
+      ],
+      [
+        "Time to be announced",
+        "Solo Singing"
+      ],
+      [
+        "Time to be announced",
+        "Medicos Got Talent"
+      ],
+      [
+        "Time to be announced",
+        "Medical Meme Making"
+      ],
+      [
+        "Time to be announced",
+        "Medical Photography"
+      ],
+      [
+        "Time to be announced",
+        "Medical Reel Making"
+      ],
+      [
+        "Evening",
+        "The Celebration: a spectacular evening of music, dance, entertainment and togetherness"
+      ]
+    ]
+  }
 ]

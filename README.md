@@ -1,3 +1,9 @@
+# Current scoped update — 24 November 2026
+
+Current implementation uses the remote deploy-clean baseline bb773d7. Owner authorized this scoped update and public deployment on 24 November 2026. Routes: / has the arrival popup; /register/ has the approved event directory; /registration-fees/ preserves prior pass/fee guidance. Set registrationUrl and detailsUrl for each entry in src/content/registration-events.json when destinations are ready; null keeps the corresponding button disabled. Run npm ci, npm run check, npm test, npm run build (ASTRO_TELEMETRY_DISABLED=1 if required). No lint/type-check script is configured; npm run check is content validation only. Registration and details targets are intentionally unavailable; external submissions cannot yet be tested. Source Serif 4 is served locally with its license. The broader redesign remains deferred.
+
+---
+
 # Implementation update — 19 November 2026
 
 The owner authorized implementation. A local Astro static preview is now implemented; public publication remains pending confirmed content and launch authorization. Historical planning statements below are superseded by this update.
