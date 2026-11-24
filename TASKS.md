@@ -6,7 +6,8 @@
 - [x] Update event cards, detail-page headings and metadata, registration, schedule, homepage and fee guidance.
 - [x] Replace the Anveshanam track label with Academic Events or Scientific Sessions according to context.
 - [x] Verify content checks, 7 tests, 23-page build, generated titles and all internal links.
-- [ ] Verify GitHub push and production deployment.
+- [x] Push implementation commit `ab3fbcc` to GitHub branch `codex/registration-pages`.
+- [x] Deploy production build `dpl_2ajfF6jUPt9a6VqjM43KB9c2Ynuv`; verify Events, Registration, Schedule and representative academic, cultural and online detail pages return 200 with descriptive titles and no legacy display names.
 
 ## Descriptive event URLs — 24 November 2026
 
