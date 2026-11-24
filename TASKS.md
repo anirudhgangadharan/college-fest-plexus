@@ -6,7 +6,8 @@
 - [x] Connect every registration-directory View Details button to its event page.
 - [x] Update fees and schedule links and add permanent redirects from ten legacy paths.
 - [x] Verify content checks, 7 tests, 23-page build and all generated internal links.
-- [ ] Verify GitHub push and production deployment.
+- [x] Push implementation commit `2388a80` to GitHub branch `codex/registration-pages`.
+- [x] Deploy production build `dpl_BYwi2KtCvHD9erU9vQ3gLV1jsJ1C`; verify all 11 descriptive event routes return 200, all 15 View Details links are active, and a legacy path returns a permanent redirect to its replacement.
 
 ## Workshop consolidation — 24 November 2026
 
