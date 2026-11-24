@@ -122,3 +122,7 @@ Not verified: Vercel deployment settings; keyboard and screen reader audit beyon
 - No-JS content/navigation verified in generated HTML and noscript styles; full interactive browser JS-disabled testing, physical devices, other browsers, full automated accessibility audit and performance measurements were not performed.
 - Detailed old brochure times for corrected event dates are not reasserted; retained in schedule-before-date-update.json for organizer review.
 - Publishing is authorized, with form/detail destinations deliberately unavailable.
+
+## Publication evidence — 24 November 2026
+
+Implementation commit c00cad0 pushed to deploy-clean. Vercel production deployment dpl_ECvGkZ1kJRYSntfHUhAej1pVrNF6 returned READY and aliased https://college-fest-plexus.vercel.app. Live browser verification confirmed homepage popup, popup-to-/register/ navigation, 15 cards, 30 inactive blank-target buttons, loaded Source Serif 4 and no horizontal overflow at the desktop verification width; no captured console errors. Screenshots saved locally under ignored .vercel/. Preview verification used Vercel CLI authentication; the automatically created temporary preview bypass was revoked and its absence verified. Registration remains intentionally unavailable until organizer links are supplied.

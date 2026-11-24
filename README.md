@@ -77,3 +77,7 @@ Remote: https://github.com/anirudhgangadharan/college-fest-plexus.git; branch: m
 From the project root, run `npm run check`, `npm test`, `npm run build`, then `git add .`, `git commit -m "Implement Plexus festival website"`, and `git push -u origin main`.
 
 Install CLI with `npm install -g vercel`, then run `vercel` and link/create the project in your signed-in account. Select Astro, build command npm run build, output dist, root ./, and Node 24.x if runtime selection is requested. No server adapter is needed for this static project. The initial deployment of a new Vercel project may be production even without --prod; the current content remains explicitly provisional. Later production updates use `vercel --prod`. GitHub pushing and CLI deploying are separate actions; automatic deployments require connecting the Git repository in Vercel. Host/domain ownership and live verification remain pending.
+
+## Published registration update — 24 November 2026
+
+Live: https://college-fest-plexus.vercel.app/ and /register/. Implementation c00cad0 is on deploy-clean and Vercel production returned READY. Local verification: content check, 7 tests, 27-page build, generated link/asset audit and responsive browser checks. Live popup/directory/font verified. Details and form destinations remain null by owner request. See TASKS.md for evidence and limits; earlier instructions to push main or obtain launch authorization are historical and superseded for this scoped publication.
