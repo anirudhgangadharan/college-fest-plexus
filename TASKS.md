@@ -6,7 +6,8 @@
 - [x] Remove Sanskrit workshop titles from public workshop content.
 - [x] Point registration and schedule links at the combined pages and configure permanent redirects from all eight legacy URLs.
 - [x] Verify content checks, 7 tests, 23-page build, generated routes and internal links.
-- [ ] Verify GitHub push and production deployment.
+- [x] Push commit `25d9137` to GitHub branch `codex/registration-pages`.
+- [x] Deploy production build `dpl_8dJXVkkrbe6qHqkb13BUmtwoyhyu`; verify all four combo routes and registration return 200, Events shows four combo cards with no legacy workshop names, and legacy workshop URLs return permanent redirects.
 
 Authorization: owner approved both mockups, Source Serif 4 sitewide, blank View Details targets, implementation, GitHub push and Vercel publication. Broader upgrade deferred.
 
