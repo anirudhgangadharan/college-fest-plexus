@@ -1,5 +1,13 @@
 # Current scoped update — 24 November 2026
 
+## Presentation naming update — 24 November 2026
+
+- [x] Rename “Scientific Paper Presentation” to “Research Paper Presentation” across public event, registration and retained schedule content.
+- [x] Rename “Scientific Poster Presentation” to “Poster Presentation” across the same public content sources.
+- [x] Verify content checks, 7 tests, 21-page production build, generated names and all internal links.
+- [ ] Re-run visual responsive screenshots when a browser runner is available; the embedded preview browser was unavailable and local headless Chrome exited before capture. No layout or style code changed.
+- [ ] Push the verified change to GitHub and deploy it to Vercel production.
+
 ## Registration fees page removal — 24 November 2026
 
 - [x] Remove `/registration-fees/` and its visible links/text.
