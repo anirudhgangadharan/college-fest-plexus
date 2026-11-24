@@ -1,5 +1,13 @@
 # Current scoped update — 24 November 2026
 
+## Plain-English event titles — 24 November 2026
+
+- [x] Replace legacy academic, cultural and online display names with their descriptive event names.
+- [x] Update event cards, detail-page headings and metadata, registration, schedule, homepage and fee guidance.
+- [x] Replace the Anveshanam track label with Academic Events or Scientific Sessions according to context.
+- [x] Verify content checks, 7 tests, 23-page build, generated titles and all internal links.
+- [ ] Verify GitHub push and production deployment.
+
 ## Descriptive event URLs — 24 November 2026
 
 - [x] Replace legacy academic, cultural and online event slugs with descriptive English URLs.

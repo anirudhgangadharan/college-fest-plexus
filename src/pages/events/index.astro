@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import events from '../../content/events.json';
 import combos from '../../content/workshop-combos.json';
-const groups=[['workshop','Workshops','The art of clinical practice'],['academic','Anveshanam · Academic arena','The pursuit of knowledge'],['cultural','The Cultural Carnival','An evening celebrating talent, art and culture'],['online','Online competitions','Submit from anywhere']];
+const groups=[['workshop','Workshops','The art of clinical practice'],['academic','Academic Events','The pursuit of knowledge'],['cultural','The Cultural Carnival','An evening celebrating talent, art and culture'],['online','Online competitions','Submit from anywhere']];
 const img=e=>e.art?`/art/${e.art}.webp`:e.category==='online'?`/brochure/${e.img}.webp`:'/brochure/emblem.webp';
 ---
 <Base title="Events · Plexus '27"><section class="wrap pagehead"><p class="eyebrow">The programme</p><h1>Events</h1><p class="lead">Pick a track. Every event has its own rules, prizes and organiser contacts.</p><nav class="jump" aria-label="Jump to track">{groups.map(([k,t])=><a href={'#'+k}>{t.split(' · ')[0]}</a>)}</nav></section>

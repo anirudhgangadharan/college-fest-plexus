@@ -53,7 +53,7 @@
     "items": [
       {
         "id": "research-paper",
-        "title": "Research Paper Presentation",
+        "title": "Scientific Paper Presentation",
         "eventSlugs": [
           "research-paper-presentation"
         ],
@@ -62,7 +62,7 @@
       },
       {
         "id": "poster",
-        "title": "Poster Presentation",
+        "title": "Scientific Poster Presentation",
         "eventSlugs": [
           "poster-presentation"
         ],
