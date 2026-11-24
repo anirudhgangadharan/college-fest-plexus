@@ -5,7 +5,8 @@
 - [x] Remove `/registration-fees/` and its visible links/text.
 - [x] Redirect the former route to `/register/`.
 - [x] Verify content checks, 7 tests, 21-page build, no fees route/links/text, and all internal links.
-- [ ] Verify GitHub push and production deployment.
+- [x] Push commits `381196a` and `c5a2030` to GitHub branch `codex/registration-pages`.
+- [x] Deploy production build `dpl_Cb2G5yVHUdSGDZJWUyZS95ipVPJs`; verify the former fees URL returns a permanent redirect to `/register/`, and the live registration page has no fees link or “links will be added soon” text.
 
 ## Festival dates and schedule removal — 24 November 2026
 
