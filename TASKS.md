@@ -6,6 +6,7 @@
 - [x] Remove Schedule from navigation, footer and homepage; replace homepage schedule preview with event discovery.
 - [x] Remove the generated Schedule page and redirect `/schedule` to `/events/`.
 - [x] Verify content checks, 7 tests, 22-page build, no Schedule route/navigation links, new festival dates and all internal links.
+- [x] Update retained schedule data: remove the empty first day, rename workshop heading, and renumber the remaining days.
 - [ ] Verify GitHub push and production deployment.
 
 ## Plain-English event titles — 24 November 2026
