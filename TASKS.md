@@ -6,7 +6,8 @@
 - [x] Rename “Scientific Poster Presentation” to “Poster Presentation” across the same public content sources.
 - [x] Verify content checks, 7 tests, 21-page production build, generated names and all internal links.
 - [ ] Re-run visual responsive screenshots when a browser runner is available; the embedded preview browser was unavailable and local headless Chrome exited before capture. No layout or style code changed.
-- [ ] Push the verified change to GitHub and deploy it to Vercel production.
+- [x] Push implementation commit `a36415d` to GitHub branch `codex/registration-pages`.
+- [x] Deploy production build `dpl_7WFZqgSe8Azm1FfMbLAEKJQkTcFA`; verify Events, Registration and both detail routes return HTTP 200 with the new titles and neither old title.
 
 ## Registration fees page removal — 24 November 2026
 
