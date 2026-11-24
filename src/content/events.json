@@ -288,7 +288,7 @@
   "when": "6 January 2027 · Session timing to be announced"
  },
  {
-  "slug": "anusandhana",
+  "slug": "research-paper-presentation",
   "category": "academic",
   "title": "Anusandhana",
   "subtitle": "Scientific Paper Presentation",
@@ -331,7 +331,7 @@
   "img": null
  },
  {
-  "slug": "chitrabhoda",
+  "slug": "poster-presentation",
   "category": "academic",
   "title": "Chitrabhoda",
   "subtitle": "Scientific Poster Presentation",
@@ -369,7 +369,7 @@
   "img": null
  },
  {
-  "slug": "roganveshana",
+  "slug": "clinical-case-presentation",
   "category": "academic",
   "title": "Roganveshana",
   "subtitle": "Clinical Case Presentation",
@@ -411,7 +411,7 @@
   "img": null
  },
  {
-  "slug": "dhishana",
+  "slug": "medical-quiz",
   "category": "academic",
   "title": "Dhishana",
   "subtitle": "The Medical Quiz",
@@ -434,7 +434,7 @@
   "img": null
  },
  {
-  "slug": "natyam",
+  "slug": "solo-dance",
   "category": "cultural",
   "title": "Natyam",
   "subtitle": "Solo Dance",
@@ -469,7 +469,7 @@
   "img": "cultural"
  },
  {
-  "slug": "nrithya",
+  "slug": "duet-group-dance",
   "category": "cultural",
   "title": "Nrithya",
   "subtitle": "Group / Duet Dance",
@@ -507,7 +507,7 @@
   "img": "cultural"
  },
  {
-  "slug": "swara",
+  "slug": "solo-singing",
   "category": "cultural",
   "title": "Swara",
   "subtitle": "Solo Singing",
@@ -582,7 +582,7 @@
   "img": "cultural"
  },
  {
-  "slug": "the-laughing-prescription",
+  "slug": "medical-meme-making",
   "category": "online",
   "title": "The Laughing Prescription",
   "subtitle": "Medical Meme Making · Online",
@@ -611,7 +611,7 @@
   "img": "online-meme"
  },
  {
-  "slug": "frames-of-healing",
+  "slug": "medical-photography",
   "category": "online",
   "title": "Frames of Healing",
   "subtitle": "Medical Photography · Online",
@@ -640,7 +640,7 @@
   "img": "online-photo"
  },
  {
-  "slug": "the-moving-medley",
+  "slug": "medical-reel-making",
   "category": "online",
   "title": "The Moving Medley",
   "subtitle": "Medical Reel Making · Online",

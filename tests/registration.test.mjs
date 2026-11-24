@@ -11,6 +11,7 @@ test('registration covers all events once, in the four approved workshop pairs',
   assert.equal(g.flatMap(x=>x.items.flatMap(i=>i.eventSlugs)).length,events().length);
   assert.deepEqual(g[0].items.map(x=>x.eventSlugs.length),[2,2,2,2]);
   assert.ok(g[0].items.every(i=>i.registrationUrl===null && i.detailsUrl?.startsWith('/events/')));
+  assert.ok(g.flatMap(group=>group.items).every(item=>item.detailsUrl?.startsWith('/events/')));
 });
 test('date labels agree with event details and use the approved January dates',()=>{
   const g=groups(); const all=events();

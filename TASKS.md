@@ -1,5 +1,13 @@
 # Current scoped update — 24 November 2026
 
+## Descriptive event URLs — 24 November 2026
+
+- [x] Replace legacy academic, cultural and online event slugs with descriptive English URLs.
+- [x] Connect every registration-directory View Details button to its event page.
+- [x] Update fees and schedule links and add permanent redirects from ten legacy paths.
+- [x] Verify content checks, 7 tests, 23-page build and all generated internal links.
+- [ ] Verify GitHub push and production deployment.
+
 ## Workshop consolidation — 24 November 2026
 
 - [x] Replace eight standalone workshop routes and cards with four scientific-name combo pages.

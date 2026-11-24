@@ -2,8 +2,9 @@
 import Base from '../layouts/Base.astro';
 import sched from '../content/schedule.json';
 import combos from '../content/workshop-combos.json';
-const workshopLinks=new Map(combos.map(combo=>[combo.shortTitle,`/events/${combo.slug}/`]));
+import registrationGroups from '../content/registration-events.json';
+const detailLinks=new Map([...combos.map(combo=>[combo.shortTitle,`/events/${combo.slug}/`]),...registrationGroups.flatMap(group=>group.items.filter(item=>item.detailsUrl).map(item=>[item.title,item.detailsUrl]))]);
 ---
 <Base title="Schedule · Plexus '27"><section class="wrap pagehead"><p class="eyebrow">5, 6 &amp; 7 January 2027</p><h1>Schedule</h1><p class="lead">Workshops on 6 January. Academics, culturals and online events on 7 January.</p></section>
-{sched.map(d=><section class="wrap day"><div class="day-h"><p class="daynum">Day {d.day}</p><h2>{d.title}</h2><p>{d.date} · {d.sub}</p></div><ol class="slots">{d.slots.map(([t,w])=><li><time>{t}</time><span>{workshopLinks.has(w)?<a href={workshopLinks.get(w)}>{w}</a>:w}</span></li>)}</ol></section>)}
+{sched.map(d=><section class="wrap day"><div class="day-h"><p class="daynum">Day {d.day}</p><h2>{d.title}</h2><p>{d.date} · {d.sub}</p></div><ol class="slots">{d.slots.map(([t,w])=><li><time>{t}</time><span>{detailLinks.has(w)?<a href={detailLinks.get(w)}>{w}</a>:w}</span></li>)}</ol></section>)}
 <section class="wrap"><p class="note">Event dates have been updated. Detailed session timings will be announced. Explore each <a href="/events/#workshop">workshop page</a>.</p></section></Base>

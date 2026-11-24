@@ -55,37 +55,37 @@
         "id": "research-paper",
         "title": "Research Paper Presentation",
         "eventSlugs": [
-          "anusandhana"
+          "research-paper-presentation"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/research-paper-presentation/"
       },
       {
         "id": "poster",
         "title": "Poster Presentation",
         "eventSlugs": [
-          "chitrabhoda"
+          "poster-presentation"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/poster-presentation/"
       },
       {
         "id": "clinical-case",
         "title": "Clinical Case Presentation",
         "eventSlugs": [
-          "roganveshana"
+          "clinical-case-presentation"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/clinical-case-presentation/"
       },
       {
         "id": "medical-quiz",
         "title": "Medical Quiz",
         "eventSlugs": [
-          "dhishana"
+          "medical-quiz"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/medical-quiz/"
       }
     ]
   },
@@ -98,28 +98,28 @@
         "id": "solo-dance",
         "title": "Solo Dance",
         "eventSlugs": [
-          "natyam"
+          "solo-dance"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/solo-dance/"
       },
       {
         "id": "duet-group-dance",
         "title": "Duet & Group Dance",
         "eventSlugs": [
-          "nrithya"
+          "duet-group-dance"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/duet-group-dance/"
       },
       {
         "id": "solo-singing",
         "title": "Solo Singing",
         "eventSlugs": [
-          "swara"
+          "solo-singing"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/solo-singing/"
       },
       {
         "id": "medicos-got-talent",
@@ -128,7 +128,7 @@
           "medicos-got-talent"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/medicos-got-talent/"
       }
     ]
   },
@@ -141,28 +141,28 @@
         "id": "medical-meme-making",
         "title": "Medical Meme Making",
         "eventSlugs": [
-          "the-laughing-prescription"
+          "medical-meme-making"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/medical-meme-making/"
       },
       {
         "id": "medical-photography",
         "title": "Medical Photography",
         "eventSlugs": [
-          "frames-of-healing"
+          "medical-photography"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/medical-photography/"
       },
       {
         "id": "medical-reel-making",
         "title": "Medical Reel Making",
         "eventSlugs": [
-          "the-moving-medley"
+          "medical-reel-making"
         ],
         "registrationUrl": null,
-        "detailsUrl": null
+        "detailsUrl": "/events/medical-reel-making/"
       }
     ]
   }

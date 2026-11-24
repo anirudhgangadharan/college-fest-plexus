@@ -7,6 +7,16 @@
     { "source": "/events/janani-raksha", "destination": "/events/obstetric-emergencies-neonatal-resuscitation/", "permanent": true },
     { "source": "/events/navaprana", "destination": "/events/obstetric-emergencies-neonatal-resuscitation/", "permanent": true },
     { "source": "/events/jeeva-raksha", "destination": "/events/basic-trauma-life-support-x-ray-interpretation/", "permanent": true },
-    { "source": "/events/antardrishti", "destination": "/events/basic-trauma-life-support-x-ray-interpretation/", "permanent": true }
+    { "source": "/events/antardrishti", "destination": "/events/basic-trauma-life-support-x-ray-interpretation/", "permanent": true },
+    { "source": "/events/anusandhana", "destination": "/events/research-paper-presentation/", "permanent": true },
+    { "source": "/events/chitrabhoda", "destination": "/events/poster-presentation/", "permanent": true },
+    { "source": "/events/roganveshana", "destination": "/events/clinical-case-presentation/", "permanent": true },
+    { "source": "/events/dhishana", "destination": "/events/medical-quiz/", "permanent": true },
+    { "source": "/events/natyam", "destination": "/events/solo-dance/", "permanent": true },
+    { "source": "/events/nrithya", "destination": "/events/duet-group-dance/", "permanent": true },
+    { "source": "/events/swara", "destination": "/events/solo-singing/", "permanent": true },
+    { "source": "/events/the-laughing-prescription", "destination": "/events/medical-meme-making/", "permanent": true },
+    { "source": "/events/frames-of-healing", "destination": "/events/medical-photography/", "permanent": true },
+    { "source": "/events/the-moving-medley", "destination": "/events/medical-reel-making/", "permanent": true }
   ]
 }
