@@ -7,3 +7,6 @@ Eight generated Renaissance-style paintings replace repeated academic/cultural c
 Run `python scripts/prepare-event-art.py` from the site root with Pillow installed to regenerate 400/800/1200 px WebP files (quality 82) and `event-art-contact-sheet.jpg`. This performs full-frame resampling without cropping. Masters stay outside `public/` and are not shipped in the static build. Website files live under `public/art/events/`; all use a 4:5 display frame.
 
 Content keys: `artwork` and `artworkAlt` in `src/content/events.json`; `EventArtwork.astro` renders responsive sources and reserved dimensions. Catalog cards are decorative within their labelled links; detail images have descriptive alt text. Home academic and cultural category cards reuse research and group-dance images. Registration cards intentionally retain their approved text-only layout.
+
+Shared background, 25 November 2026: AI-generated using the built-in imagegen tool; approved by owner in chat. Optimized from the approved 1536x1024 PNG to public/art/plexus-shared-background.webp, 25,098 bytes. Prompt specified faint antique-gold botanical/vascular linework at the edges, clear ivory center, no text, logos, skulls, people, landmarks or repeating tiles. No third-party source image used. Existing artwork originals preserved.
+

@@ -236,3 +236,8 @@ Verified: npm run check; npm test (9/9); npm run build (21 pages); node scripts/
 ## Accommodation form activation — 25 November 2026
 Owner supplied and explicitly approved https://forms.gle/FJHof3Yb1JjoNgrd8 for the accommodation ribbon. Set status=open and organizerVerified=true on that owner authority. Ribbon now repeats Register for Accommodation and links directly to the supplied form. No form submission was attempted; external access restrictions are not established by URL validation.
 
+
+## Shared background — 25 November 2026
+Owner approved implementation and GitHub/Vercel publication. Replaced the repeating SVG turbulence texture with public/art/plexus-shared-background.webp (25,098 bytes), derived from the approved imagegen concept: faint gold botanical/anatomical linework on ivory. A single fixed decorative body pseudo-element displays the image without tiling or scroll-driven animation; solid ivory is the fallback. Header/footer use solid espresso. Removed home hero-emblem markup and disabled pagehead, Visit Gadag, accommodation and event-detail decorative watermark pseudo-elements globally. Main hero painting, logo and standalone informative images remain. Content, typography and registration workflows unchanged.
+Verification: npm run check; npm test (9/9); npm run build (21 pages); node scripts/audit-links.mjs (0 broken links). Responsive visual/zoom verification not yet completed. This update supersedes earlier texture/collage recommendations.
+
