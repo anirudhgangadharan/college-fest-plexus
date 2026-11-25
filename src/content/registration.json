@@ -5,7 +5,7 @@
     "culturalPass":{ "label": "Cultural Delegate Pass", "fee": "₹200", "url": null, "blurb": "Cultural events and meals during the allotted event timings only." },
     "workshops":   { "label": "Workshop Combo Packs", "fee": "₹200 early bird · ₹300 late", "url": null, "blurb": "Choose one combo pack. Early bird until 12 Dec 2026, 11:59 PM IST." },
     "abstracts":   { "label": "Abstract Submission: Paper, Poster, Case", "fee": "Free", "url": null, "blurb": "Free abstract submission. Shortlisted participants pay the Basic Delegate fee. Deadline 12 Dec 2026, 11:59 PM." },
-    "quiz":        { "label": "Medical Quiz", "fee": "Free", "url": null, "blurb": "Teams of 2, maximum one CRRI per team. Inter-college teams allowed." },
+    "quiz":        { "label": "Medical Quiz", "fee": "Free", "url": "https://docs.google.com/forms/d/e/1FAIpQLSfbN6XULjSMYhkpwbYzWU_HVVGQnAiTzveVI4tfI1fvBa_BbQ/viewform", "blurb": "Teams of 2, maximum one CRRI per team. Inter-college teams allowed." },
     "cultural":    { "label": "Cultural Events", "fee": "Included with Delegate Pass", "url": null, "blurb": "Solo Dance, Duet & Group Dance, Solo Singing and Medicos Got Talent." },
     "online":      { "label": "Online Competitions", "fee": "Free", "url": null, "blurb": "Memes, photography and reels. Submit online." }
   }
