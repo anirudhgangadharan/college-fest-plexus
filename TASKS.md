@@ -213,3 +213,5 @@ Implementation b0dbd49 pushed to origin/deploy-clean. Vercel deployment dpl_Ee8K
 
 ## Date-shift verification — 25 November 2026
 Implemented approved one-day shift across festival data, 19 event records, four registration groups, retained schedule data, homepage hero, catalog combo labels and combo headings. Shared footer, popup and default metadata inherit new content. npm run check passed; npm test 8/8 passed; npm run build generated 21 pages; internal links audit found zero broken links. All 21 HTML pages audited for updated festival footer and absence of obsolete dates; all 15 detail routes match registration dates. Field comparison against HEAD confirms registration URLs, fees and other event fields unchanged. Historical reference assets/archived schedule preserved. Publication and live checks follow.
+
+Release integration: origin/deploy-clean advanced to 8fb7475 with corrected BLS and Medical Quiz forms. Merged those changes without replacing their links; all 15 registration entries are now active as in the remote baseline. Re-ran 8 tests, content check, 21-page build and link/date audits after merge. The final deployment includes this merged state.
