@@ -11,10 +11,8 @@
           "prana-raksha",
           "hridaya-naada"
         ],
-        "registrationUrl": null,
-        "detailsUrl": "/events/basic-life-support-heart-sounds/",
-        "suppliedRegistrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd1KUzpfhui3-EOLAjZAylLcXfzjcVHjuVp0ygijKj7zxLvw/viewform",
-        "unavailableReason": "Registration temporarily unavailable — form link needs correction."
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd1KUzpfhui3-EOLAjZAylLLcXfzjcVHjuVp0ygijKj7zxLvw/viewform",
+        "detailsUrl": "/events/basic-life-support-heart-sounds/"
       },
       {
         "id": "basic-surgical-skills-ecg",
@@ -86,9 +84,8 @@
         "eventSlugs": [
           "medical-quiz"
         ],
-        "registrationUrl": null,
-        "detailsUrl": "/events/medical-quiz/",
-        "unavailableReason": "Registration temporarily unavailable — form being repaired."
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfbN6XULjSMYhkpwbYzWU_HVVGQnAiTzveVI4tfI1fvBa_BbQ/viewform",
+        "detailsUrl": "/events/medical-quiz/"
       }
     ]
   },

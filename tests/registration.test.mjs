@@ -39,18 +39,15 @@ test('individual Google Forms and site-relative details can be configured later'
 
 test('available forms resolve through both workshop members and individual events',()=>{
   const g=groups(); const items=g.flatMap(group=>group.items);
-  assert.equal(items.filter(item=>item.registrationUrl).length,13);
-  assert.equal(new Set(items.filter(item=>item.registrationUrl).map(item=>item.registrationUrl)).size,13);
+  assert.equal(items.filter(item=>item.registrationUrl).length,15);
+  assert.equal(new Set(items.filter(item=>item.registrationUrl).map(item=>item.registrationUrl)).size,15);
   for(const item of items) for(const slug of item.eventSlugs) {
     assert.equal(registrationForEvent(g,slug),item);
   }
   const bls=registrationForEvent(g,'prana-raksha');
-  assert.equal(bls.registrationUrl,null);
-  assert.match(bls.suppliedRegistrationUrl,/docs.google.com/);
-  assert.match(registrationMessage(bls),/needs correction/);
+  assert.match(bls.registrationUrl,/docs.google.com\/forms/);
   const quiz=registrationForEvent(g,'medical-quiz');
-  assert.equal(quiz.registrationUrl,null);
-  assert.match(registrationMessage(quiz),/form being repaired/);
-  const changed=structuredClone(g);changed[1].items[3].registrationUrl=items[1].registrationUrl;
+  assert.match(quiz.registrationUrl,/docs.google.com\/forms/);
+  const changed=structuredClone(g);changed[0].items[0].unavailableReason='Temporarily unavailable';
   assert.throws(()=>validateRegistrationGroups(changed,events()),/unavailable reason/);
 });
