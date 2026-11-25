@@ -328,7 +328,9 @@
    }
   ],
   "form": "abstracts",
-  "img": null
+  "img": null,
+  "artwork": "research-paper-presentation",
+  "artworkAlt": "A scholar presents an illustrated medical manuscript to two attentive reviewers."
  },
  {
   "slug": "poster-presentation",
@@ -366,7 +368,9 @@
    }
   ],
   "form": "abstracts",
-  "img": null
+  "img": null,
+  "artwork": "poster-presentation",
+  "artworkAlt": "A presenter explains a medical chart on an easel to a seated scholar."
  },
  {
   "slug": "clinical-case-presentation",
@@ -408,7 +412,9 @@
    }
   ],
   "form": "abstracts",
-  "img": null
+  "img": null,
+  "artwork": "clinical-case-presentation",
+  "artworkAlt": "A physician discusses an illustrated casebook beside a seated patient and senior colleague."
  },
  {
   "slug": "medical-quiz",
@@ -431,7 +437,9 @@
   "when": "7 January 2027 · Timing to be announced",
   "contacts": [],
   "form": "quiz",
-  "img": null
+  "img": null,
+  "artwork": "medical-quiz",
+  "artworkAlt": "Two contestants consider a medical question as one raises her hand to answer."
  },
  {
   "slug": "solo-dance",
@@ -466,7 +474,9 @@
    }
   ],
   "form": "cultural",
-  "img": "cultural"
+  "img": "cultural",
+  "artwork": "solo-dance",
+  "artworkAlt": "An Indian classical dancer holds an expressive pose in burgundy and gold."
  },
  {
   "slug": "duet-group-dance",
@@ -504,7 +514,9 @@
    }
   ],
   "form": "cultural",
-  "img": "cultural"
+  "img": "cultural",
+  "artwork": "duet-group-dance",
+  "artworkAlt": "Three Indian dancers perform coordinated gestures in burgundy, ivory and gold costumes."
  },
  {
   "slug": "solo-singing",
@@ -540,7 +552,9 @@
    }
   ],
   "form": "cultural",
-  "img": "cultural"
+  "img": "cultural",
+  "artwork": "solo-singing",
+  "artworkAlt": "A vocalist sings into a vintage microphone with a tanpura accompanist behind her."
  },
  {
   "slug": "medicos-got-talent",
@@ -579,7 +593,9 @@
    }
   ],
   "form": "cultural",
-  "img": "cultural"
+  "img": "cultural",
+  "artwork": "medicos-got-talent",
+  "artworkAlt": "A magician reveals a golden ribbon, accompanied by a violinist and theatrical storyteller."
  },
  {
   "slug": "medical-meme-making",

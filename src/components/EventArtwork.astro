@@ -1,0 +1,14 @@
+---
+const { event, decorative = false, sizes = '(max-width: 700px) calc(100vw - 44px), 360px' } = Astro.props;
+const src = event.art ? `/art/${event.art}.webp` : event.img ? `/brochure/${event.img}.webp` : null;
+const generated = Boolean(event.artwork);
+const base = generated ? `/art/events/${event.artwork}` : null;
+---
+{(base || src) && <img
+  src={base ? `${base}-800.webp` : src}
+  srcset={base ? `${base}-400.webp 400w, ${base}-800.webp 800w, ${base}-1200.webp 1200w` : undefined}
+  sizes={base ? sizes : undefined}
+  alt={decorative ? '' : event.artworkAlt || `Illustration for ${event.title}`}
+  width={generated ? 800 : 600} height={generated ? 1000 : 700}
+  loading="lazy" decoding="async"
+/>}

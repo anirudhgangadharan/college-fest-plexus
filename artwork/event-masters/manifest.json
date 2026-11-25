@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "research-paper-presentation",
+    "title": "Research Paper Presentation",
+    "source": "exec-8a49b782-d184-4754-b02e-098489575570.png",
+    "alt": "A scholar presents an illustrated medical manuscript to two attentive reviewers."
+  },
+  {
+    "slug": "poster-presentation",
+    "title": "Poster Presentation",
+    "source": "exec-d4c0ef73-42d6-4c8c-aa71-f3983f16467f.png",
+    "alt": "A presenter explains a medical chart on an easel to a seated scholar."
+  },
+  {
+    "slug": "clinical-case-presentation",
+    "title": "Clinical Case Presentation",
+    "source": "exec-1f784515-90fb-43cc-bd26-fa73081e8dcd.png",
+    "alt": "A physician discusses an illustrated casebook beside a seated patient and senior colleague."
+  },
+  {
+    "slug": "medical-quiz",
+    "title": "Medical Quiz",
+    "source": "exec-43df5e4b-8d4d-457e-a4e6-9aedb743f2b0.png",
+    "alt": "Two contestants consider a medical question as one raises her hand to answer."
+  },
+  {
+    "slug": "solo-dance",
+    "title": "Solo Dance",
+    "source": "exec-d7d0cf6a-beca-49e6-abd0-d5ea51b4e9da.png",
+    "alt": "An Indian classical dancer holds an expressive pose in burgundy and gold."
+  },
+  {
+    "slug": "duet-group-dance",
+    "title": "Duet and Group Dance",
+    "source": "exec-80218335-c0a2-41f5-ae56-41b00ec2b1ae.png",
+    "alt": "Three Indian dancers perform coordinated gestures in burgundy, ivory and gold costumes."
+  },
+  {
+    "slug": "solo-singing",
+    "title": "Solo Singing",
+    "source": "exec-7f0f8c94-c063-499f-a7ba-fb7084288be1.png",
+    "alt": "A vocalist sings into a vintage microphone with a tanpura accompanist behind her."
+  },
+  {
+    "slug": "medicos-got-talent",
+    "title": "Medicos Got Talent",
+    "source": "exec-425f8f0c-eb06-4401-9e0c-e004948d7049.png",
+    "alt": "A magician reveals a golden ribbon, accompanied by a violinist and theatrical storyteller."
+  }
+]

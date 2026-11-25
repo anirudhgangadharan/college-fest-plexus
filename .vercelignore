@@ -5,3 +5,6 @@ dist
 *.log
 *.md
 schedule-before-date-update.json
+
+artwork/
+scripts/prepare-event-art.py

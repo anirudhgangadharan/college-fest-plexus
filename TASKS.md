@@ -1,3 +1,11 @@
+# Event artwork — 25 November 2026
+
+- Authorized: owner said Execute after the eight-image replacement plan. Local integration and preview are authorized; publication is separate.
+- Implemented: eight distinct paintings for four academic and four cultural events; responsive 400/800/1200 px WebP assets; catalog/detail integration; relevant home category imagery; preserved PNG masters and labelled contact sheet. Existing workshops and online art preserved. Registration directory unchanged.
+- Verified: npm run check passed; npm test passed 7/7; npm run build generated 21 pages; node scripts/audit-links.mjs found zero broken internal links. Twenty-four WebP derivatives total 2,716,660 bytes, individual files 24,612–235,096 bytes.
+- Browser: all eight new catalog assets loaded; academic/cultural compositions visually inspected and solo-dance detail asset/alt confirmed. Narrow-screen viewport overrides rendered inconsistently in the in-app browser; exact 320 px/200% zoom validation remains unverified. No new interaction code or CSS was introduced.
+- Pending: owner visual review, reliable phone-width verification, optional publication after separate approval. No commit, push or deployment performed for this artwork change.
+
 # Current scoped update — 24 November 2026
 
 ## Presentation naming update — 24 November 2026
@@ -180,3 +188,6 @@ Not verified: Vercel deployment settings; keyboard and screen reader audit beyon
 ## Publication evidence — 24 November 2026
 
 Implementation commit c00cad0 pushed to deploy-clean. Vercel production deployment dpl_ECvGkZ1kJRYSntfHUhAej1pVrNF6 returned READY and aliased https://college-fest-plexus.vercel.app. Live browser verification confirmed homepage popup, popup-to-/register/ navigation, 15 cards, 30 inactive blank-target buttons, loaded Source Serif 4 and no horizontal overflow at the desktop verification width; no captured console errors. Screenshots saved locally under ignored .vercel/. Preview verification used Vercel CLI authentication; the automatically created temporary preview bypass was revoked and its absence verified. Registration remains intentionally unavailable until organizer links are supplied.
+
+## Artwork publication authorization — 25 November 2026
+Owner approved the visual result and explicitly requested GitHub push and Vercel deployment. This supersedes the separate-approval pending state above. Publishing the current local artwork implementation; live verification follows deployment.

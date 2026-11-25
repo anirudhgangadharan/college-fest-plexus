@@ -1,3 +1,7 @@
+# Responsive event artwork — 25 November 2026
+
+Optional event fields `artwork` (safe filename key) and `artworkAlt` select generated paintings under public/art/events. EventArtwork.astro emits 400/800/1200 px WebP srcset, sizes, explicit 4:5 dimensions, lazy loading and async decoding; legacy art/img fields remain supported. Content validation checks all three derivatives. Masters and manifest remain outside public; scripts/prepare-event-art.py reproducibly resamples them with Pillow. No new runtime or package dependencies.
+
 # Current scoped update — 24 November 2026
 
 The approved registration directory is src/content/registration-events.json. Four groups own ISO date-only dates; each item owns a stable ID, title, eventSlugs, registrationUrl, and detailsUrl. Null destinations render disabled buttons, never empty hrefs or random external links. Each future registrationUrl is validated as HTTPS Google Forms; each detailsUrl must be a site-relative URL. src/lib/registration.mjs validates references/IDs/dates and formats dates in Asia/Kolkata. Existing category forms in registration.json remain separate and power /registration-fees/ and existing event pages. The popup uses native dialog focus containment/Escape, focus return and scroll lock; core content/navigation remain server-rendered without JavaScript. Corrected event dates are reflected in event details and schedule; previous brochure timing data is archived in schedule-before-date-update.json for organizer review, outside public/.

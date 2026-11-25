@@ -1,3 +1,7 @@
+# Event artwork update — 25 November 2026
+
+Owner-authorized eight academic/cultural paintings match uploaded workshop references: finely painted Renaissance figures, amber light, burgundy/umber/ivory fabrics and quiet olive backgrounds. Cultural subjects retain Indian performance context. Images fill the existing 4:5 card frame; typography, palette tokens, layout, workshop and online art remain intact. See artwork/README.md for provenance and preservation. Local integration only; publication awaits separate approval for this change.
+
 # Current scoped update — 24 November 2026
 
 Approved registration design: parchment canvas, espresso filled Register Now button, outlined View Details button to its right, two-column cards on desktop and one column on phones; online cards use three columns only where space permits. Source Serif 4 is the single text family across every route, with Georgia/serif fallback. The Latin variable WOFF2 is hosted locally under public/fonts with its SIL Open Font License. The homepage opens a dismissible native dialog on each homepage load; its ordinary Register Now link opens /register/. No broader redesign is included.
