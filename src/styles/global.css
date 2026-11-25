@@ -198,3 +198,31 @@ body,button,input,select,textarea{font-family:'Source Serif 4',Georgia,serif}
 @media(max-width:360px){.registration-actions{gap:8px}.register-action,.details-action,.online-group .register-action,.online-group .details-action{font-size:15px;padding-inline:5px}.top{gap:6px}.brand{gap:5px}.brand b{font-size:20px}.brand small{font-size:7px}.brand img{width:25px;height:25px}.top>.btn{font-size:10px;padding:9px 8px}.menu{padding:8px;font-size:11px}}
 .pagehead h1{overflow-wrap:anywhere;text-wrap:balance}
 @media(max-width:360px){.pagehead h1{font-size:42px}}
+
+/* Approved Option A typography — 25 November 2026. */
+body{font-size:1.125rem;line-height:1.6}
+.lead{font-size:1.1875rem;line-height:1.6}
+.tag{font-size:1.25rem;line-height:1.45}
+h1{font-size:clamp(2.375rem,5vw,4.5rem);line-height:1.12}
+h2{font-size:clamp(1.75rem,3.5vw,2.75rem);line-height:1.15}
+h3,.h3,.plain h3{font-size:1.625rem;line-height:1.2}
+.workshop-section h2{font-size:clamp(1.875rem,3.5vw,2.75rem);line-height:1.15}
+.d-side dl{font-size:1rem}
+.small{font-size:.9375rem}
+.person figcaption span,.sign{font-size:1rem}
+.reach p{font-size:1.375rem}
+footer{font-size:1rem}
+.registration-intro p{font-size:1.0625rem}
+.registration-card h3{font-size:1.25rem}
+.registration-card time{font-size:1rem}
+.registration-intro h1{font-size:clamp(1.875rem,4vw,3rem)}
+.registration-popup h2{font-size:clamp(2.375rem,5vw,3.25rem)}
+.registration-popup #reg-description{font-size:1.125rem}
+.popup-dates{font-size:1.0625rem}
+.popup-register{font-size:1.25rem}
+.popup-caption{font-size:.9375rem}
+@media(max-width:700px){
+  .d-main h1,.pagehead h1{font-size:2.375rem;line-height:1.12}
+  .cat h3,.card h3{font-size:1.5rem}
+  .registration-intro h1{font-size:1.875rem}
+}

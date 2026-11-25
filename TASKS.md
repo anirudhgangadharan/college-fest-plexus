@@ -1,3 +1,7 @@
+# Option A implementation — 25 November 2026
+
+Owner explicitly approved sample A and GitHub/Vercel publication. Implemented global responsive typography in src/styles/global.css; no content, registration URLs, images, dependencies or interaction code changed. Browser computed sizes at 390 px match approved sample (18/19/38/26 px); screenshot saved under ignored .vercel/option-a-phone.jpg. At 320 px all six representative route types (home, registration, catalog, event details, About, Visit) fit without horizontal document overflow. At 1440 px registration titles are 20 px, dates 16 px and buttons retain 44 px minimum height; desktop screenshot reviewed. Viewport reset. Existing eight tests pass; build/link results recorded below. Publication pending.
+
 # Approved festival date shift — 25 November 2026
 
 Owner authorized shifting every website festival/event date one day earlier: 6→5, 7→6, 8→7 January 2027. Current festival dates are 5–7 January 2027. All workshop combos are 5 January; listed academic, cultural and online events are 6 January. This supersedes older date statements below. Registration URLs, fees and December deadlines are unchanged. Google Forms content is external and has not been edited. Historical schedule-before-date-update.json remains an archive, not a live content source.
@@ -218,3 +222,5 @@ Release integration: origin/deploy-clean advanced to 8fb7475 with corrected BLS 
 
 ## Date-shift publication — 25 November 2026
 Merged release f476586 is on GitHub deploy-clean. Final Vercel deployment dpl_3dSC1oDks3SqzDDYkx1nTGp6VgeT returned READY and aliased https://college-fest-plexus.vercel.app. Read-only production HTTP checks passed on all 20 principal/event routes: HTTP 200, updated festival dates, no obsolete date signatures. Browser confirmed live homepage hero, popup, footer and description metadata use shifted dates. Further browser calls timed out, so fresh mobile screenshots were not completed for this text-only change. All 21 generated pages and all 15 event/combo dates audited. Existing BLS/Quiz registration fixes preserved; Google Forms' own date text was not edited.
+
+Build verification: npm run check passed; npm test 8/8 passed; npm run build produced 21 static pages; node scripts/audit-links.mjs found zero broken internal links. git diff --check passed.

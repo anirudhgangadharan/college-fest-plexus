@@ -1,3 +1,7 @@
+# Approved Option A typography — 25 November 2026
+
+Owner selected the Comfortable sample and authorized GitHub/Vercel publication. Body text is 18 px (1.125rem), lead paragraphs 19 px, quotations 20 px, phone page headings 38 px, detail section headings 26 px, registration card titles 20 px and dates 16 px. Retain Source Serif 4, existing artwork, palette, layout and button tap areas. Related headings, popup and supporting text follow the smaller responsive scale. CSS uses rem units to respect browser font preferences. This supersedes older large-text recommendations below.
+
 # Approved festival date shift — 25 November 2026
 
 Owner authorized shifting every website festival/event date one day earlier: 6→5, 7→6, 8→7 January 2027. Current festival dates are 5–7 January 2027. All workshop combos are 5 January; listed academic, cultural and online events are 6 January. This supersedes older date statements below. Registration URLs, fees and December deadlines are unchanged. Google Forms content is external and has not been edited. Historical schedule-before-date-update.json remains an archive, not a live content source.

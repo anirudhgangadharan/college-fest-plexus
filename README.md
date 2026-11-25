@@ -1,3 +1,7 @@
+# Option A typography — 25 November 2026
+
+The owner-approved Comfortable typography is implemented in the final Option A block of src/styles/global.css. It applies across all routes: body 18 px, introductory copy 19 px, phone page headings 38 px; registration titles 20 px and dates 16 px. Existing content, dates, links, artwork and layout are preserved. Verify with npm run check, npm test, npm run build and node scripts/audit-links.mjs.
+
 # Approved festival date shift — 25 November 2026
 
 Owner authorized shifting every website festival/event date one day earlier: 6→5, 7→6, 8→7 January 2027. Current festival dates are 5–7 January 2027. All workshop combos are 5 January; listed academic, cultural and online events are 6 January. This supersedes older date statements below. Registration URLs, fees and December deadlines are unchanged. Google Forms content is external and has not been edited. Historical schedule-before-date-update.json remains an archive, not a live content source.
