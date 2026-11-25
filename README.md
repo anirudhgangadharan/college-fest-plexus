@@ -104,3 +104,5 @@ Edit registrationUrl in src/content/registration-events.json; directory and even
 Published: event-specific registration update b0dbd49 is live at https://college-fest-plexus.vercel.app/register/. Thirteen active forms and two unavailable states verified on production; live workshop detail-to-form navigation verified. BLS still needs a corrected URL; Medical Quiz still awaits its repaired URL.
 
 Published date update: 5–7 January 2027 festival; workshops 5 January; academic/cultural/online events 6 January. Release f476586 / Vercel dpl_3dSC1oDks3SqzDDYkx1nTGp6VgeT verified across 20 live principal/event routes. Google Forms dates are managed separately. Newer BLS and Quiz form links from GitHub were preserved.
+
+Published Option A: 66d370d / Vercel dpl_6PTv3y4kv1wbSrKgCcgdYM1quvoh. Live phone typography verified at 390 px; all 15 registration links retained.
