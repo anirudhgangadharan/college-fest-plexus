@@ -1,5 +1,6 @@
 ---
 import f from '../content/festival.json';
+import AccommodationAnnouncement from '../components/AccommodationAnnouncement.astro';
 import groups from '../content/registration-events.json';
 import {formatEventDate} from '../lib/registration.mjs';
 import '../styles/global.css';
@@ -13,6 +14,7 @@ const nav=[['/','Home'],['/events/','Events'],['/register/','Registration'],['/a
 <nav aria-label="Main navigation" id="nav">{nav.map(([h,l])=><a href={h} aria-current={(h==='/'?path==='/':path.startsWith(h))?'page':undefined}>{l}</a>)}</nav>
 <button class="menu" aria-expanded="false" aria-controls="nav" id="menu">Menu</button>
 <a class="btn gold" href="/register/" data-register>Register Now</a></header>
+<AccommodationAnnouncement />
 <main id="main"><slot/></main>
 <footer><div class="foot-grid"><div><p class="brand-line">PLEXUS '27</p><p>{f.subtitle}<br/>{f.institutionName}</p><p>{f.date}</p></div><div><p class="h">Explore</p><a href="/events/">Events</a><a href="/register/">Registration</a><a href="/about/">About &amp; committee</a><a href="/visit/">How to reach</a></div><div><p class="h">Contact</p><a href={'mailto:'+f.email}>{f.email}</a><p>{f.address}</p></div></div><small>© Plexus '27 · K. H. Patil Institute of Medical Sciences, Gadag · Registration happens on Google Forms. This site collects no participant data.</small></footer>
 {path==='/' && <dialog id="reg" class="registration-popup" aria-labelledby="reg-t" aria-describedby="reg-description">

@@ -1,0 +1,52 @@
+---
+import accommodation from '../content/accommodation.json';
+import {validForm} from '../../scripts/validate.mjs';
+const open = accommodation.status === 'open' && accommodation.organizerVerified && validForm(accommodation.url);
+const label = open ? accommodation.label : accommodation.status === 'closed' ? 'Accommodation registration closed' : accommodation.pendingLabel;
+const Tag = open ? 'a' : 'div';
+---
+{accommodation.enabled && <aside class="accommodation" aria-label="Accommodation registration">
+  <Tag class:list={['accommodation-message', { 'is-link': open }]} href={open ? accommodation.url : undefined}>
+    <span class="accommodation-accessible">{label}{open && ' — continues on Google Forms'}</span>
+    <span class="accommodation-static" aria-hidden="true">{label}</span>
+    <span class="accommodation-track" aria-hidden="true">
+      {[0, 1].map(() => <span class="accommodation-group">{Array.from({length: 6}, () => <span>{label}<i>◆</i></span>)}</span>)}
+    </span>
+  </Tag>
+  <button class="accommodation-pause" type="button" aria-label="Pause accommodation announcement" aria-pressed="false" hidden>Ⅱ</button>
+</aside>}
+<style>
+  .accommodation{display:flex;align-items:stretch;min-width:0;background:#e6bf6a;color:#2b170e;border-block:1px solid #9b712d;font:600 1.0625rem/1.4 'Source Serif 4',Georgia,serif}
+  .accommodation-message{display:block;flex:1;min-width:0;overflow:hidden;text-decoration:none;position:relative}
+  .accommodation-static{display:block;text-align:center;padding:12px 16px;overflow-wrap:anywhere}
+  .is-link .accommodation-static,.is-link .accommodation-group>span{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+  .accommodation-track{display:none;width:max-content}
+  .accommodation-group{display:flex;flex:none}
+  .accommodation-group>span{display:flex;align-items:center;white-space:nowrap;padding:12px 0}
+  .accommodation-group i{font-size:.65em;font-style:normal;margin-inline:32px}
+  .accommodation-pause{flex:none;width:44px;min-height:44px;border:0;border-left:1px solid #9b712d;background:transparent;color:inherit;font:inherit;cursor:pointer}
+  .accommodation-accessible{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .accommodation.is-enhanced .accommodation-static{display:none}
+  .accommodation.is-enhanced .accommodation-track{display:flex;animation:accommodation-scroll 80s linear infinite}
+  .accommodation:is(:hover,:focus-within,.is-paused) .accommodation-track{animation-play-state:paused}
+  .accommodation-message:focus-visible{outline-offset:-4px}
+  @keyframes accommodation-scroll{to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){
+    .accommodation.is-enhanced .accommodation-static{display:block}
+    .accommodation.is-enhanced .accommodation-track,.accommodation-pause{display:none}
+  }
+</style>
+<script>
+  document.querySelectorAll<HTMLElement>('.accommodation').forEach(banner => {
+    const button = banner.querySelector<HTMLButtonElement>('.accommodation-pause');
+    if (!button) return;
+    button.hidden = false;
+    banner.classList.add('is-enhanced');
+    button.addEventListener('click', () => {
+      const paused = banner.classList.toggle('is-paused');
+      button.setAttribute('aria-pressed', String(paused));
+      button.setAttribute('aria-label', `${paused ? 'Resume' : 'Pause'} accommodation announcement`);
+      button.textContent = paused ? '▶' : 'Ⅱ';
+    });
+  });
+</script>
