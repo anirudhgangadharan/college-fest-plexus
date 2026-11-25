@@ -233,3 +233,16 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 .pagehead:after,body[data-page] .pagehead:after,.visit-art:after,.accommodation-art:after,.d-main:before{content:none;display:none}
 .top{background:#29190f}
 footer{background:#2b170e}
+
+/* Visit page: approved building backdrop and compact continuous content flow. */
+body[data-page='/visit/'] .visit-heading{min-height:0;padding-block:32px 24px;position:relative;isolation:isolate}
+.visit-building{position:absolute;z-index:-1;pointer-events:none;right:0;top:0;width:min(52%,560px);height:100%;object-fit:contain;opacity:.14;mask-image:radial-gradient(ellipse,#000 35%,transparent 73%)}
+body[data-page='/visit/'] .visit-heading .lead{margin-bottom:0}
+body[data-page='/visit/'] main>.wrap:not(.pagehead){padding-block:12px}
+body[data-page='/visit/'] .reach{padding-block:0 12px!important}
+body[data-page='/visit/'] .accommodation-art{padding-block:12px!important}
+body[data-page='/visit/'] .accommodation-art .note{margin:0;max-width:none}
+@media(max-width:700px){
+  body[data-page='/visit/'] .visit-heading{padding-block:24px 20px}
+  .visit-building{width:75%;right:0;opacity:.08;object-position:right center}
+}
