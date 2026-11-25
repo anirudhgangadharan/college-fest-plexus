@@ -4,7 +4,8 @@ import EventArtwork from '../../components/EventArtwork.astro';
 import FormButton from '../../components/FormButton.astro';
 import events from '../../content/events.json';
 import combos from '../../content/workshop-combos.json';
-import reg from '../../content/registration.json';
+import groups from '../../content/registration-events.json';
+import {registrationForEvent} from '../../lib/registration.mjs';
 export function getStaticPaths(){
   const individual=events.filter(event=>event.category!=='workshop').map(event=>({params:{slug:event.slug},props:{event}}));
   const combined=combos.map(combo=>({params:{slug:combo.slug},props:{combo,workshops:combo.eventSlugs.map(slug=>events.find(event=>event.slug===slug))}}));
@@ -16,7 +17,7 @@ const primary=isCombo?workshops[0]:e;
 const title=isCombo?combo.title:e.title;
 const description=isCombo?workshops.map(workshop=>workshop.about).join(' '):e.subtitle+'. '+e.tagline;
 const contacts=isCombo?[...new Map(workshops.flatMap(workshop=>workshop.contacts).map(contact=>[contact.phone,contact])).values()]:e.contacts;
-const form=reg.forms[primary.form];
+const registration=registrationForEvent(groups,primary.slug);
 ---
 <Base title={title+' · Plexus \'27'} desc={description}>
 {isCombo&&<header class="wrap pagehead"><a class="back" href="/events/">← All events</a><p class="eyebrow">Workshop · Combo Pack {String(primary.pack).padStart(2,'0')} · 6 January 2027</p><h1>{combo.title}</h1></header>}
@@ -24,4 +25,4 @@ const form=reg.forms[primary.form];
 {!isCombo&&<><a class="back" href="/events/">← All events</a><p class="eyebrow">{e.subtitle}</p><h1>{e.title}</h1><p class="tag">“{e.tagline}”</p><p class="lead">{e.about}</p><h2 class="h3">{e.leadIn}</h2><ul class="list">{e.items.map(i=><li>{i}</li>)}</ul>{e.rules&&e.rules.length>0&&<><h2 class="h3">Integrity</h2><ul class="list">{e.rules.map(i=><li>{i}</li>)}</ul></>}</>}
 {isCombo&&workshops.map(workshop=><section class="workshop-section"><p class="eyebrow">{workshop.session}</p><h2>{workshop.title}</h2><p class="tag">“{workshop.tagline}”</p><p class="lead">{workshop.about}</p><h3 class="h3">{workshop.leadIn}</h3><ul class="list">{workshop.items.map(item=><li>{item}</li>)}</ul></section>)}
 {contacts&&contacts.length>0&&<><h2 class="h3">Contact for queries</h2><ul class="contacts">{contacts.map(c=><li><span>{c.name}</span><a href={'tel:'+c.phone.replace(/\s/g,'')}>{c.phone}</a></li>)}</ul></>}</div>
-<aside class="d-side">{isCombo?workshops.map(workshop=><figure><img src={'/art/'+workshop.art+'.webp'} alt={'Illustration for '+workshop.title} width="600" height="700"/><figcaption class="small">{workshop.session} · {workshop.title}</figcaption></figure>):<EventArtwork event={e}/>}<dl><dt>When</dt><dd>{primary.when}{isCombo&&<><br/>Morning &amp; afternoon sessions</>}</dd><dt>Fee</dt><dd>{primary.fee}</dd>{!isCombo&&e.prize&&<><dt>Prizes</dt><dd>{e.prize}</dd></>}<dt>Venue</dt><dd>K. H. Patil Institute of Medical Sciences, Gadag</dd></dl>{isCombo&&<p class="note">Workshops are booked as a combo; one student can register for each combo only.</p>}<div class="reg-box"><p class="eyebrow">{isCombo?'Combo registration':form.label}</p><FormButton form={primary.form}/><p class="small">{isCombo?'One registration covers both workshops in this combo.':'One Google Form covers this whole category.'}</p></div></aside></section></Base>
+<aside class="d-side">{isCombo?workshops.map(workshop=><figure><img src={'/art/'+workshop.art+'.webp'} alt={'Illustration for '+workshop.title} width="600" height="700"/><figcaption class="small">{workshop.session} · {workshop.title}</figcaption></figure>):<EventArtwork event={e}/>}<dl><dt>When</dt><dd>{primary.when}{isCombo&&<><br/>Morning &amp; afternoon sessions</>}</dd><dt>Fee</dt><dd>{primary.fee}</dd>{!isCombo&&e.prize&&<><dt>Prizes</dt><dd>{e.prize}</dd></>}<dt>Venue</dt><dd>K. H. Patil Institute of Medical Sciences, Gadag</dd></dl>{isCombo&&<p class="note">Workshops are booked as a combo; one student can register for each combo only.</p>}<div class="reg-box"><p class="eyebrow">{isCombo?'Combo registration':'Event registration'}</p><FormButton registration={registration}/><p class="small">{isCombo?'One registration covers both workshops in this combo.':'This form is for this event.'}</p></div></aside></section></Base>

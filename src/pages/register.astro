@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import groups from '../content/registration-events.json';
 import events from '../content/events.json';
-import {formatEventDate,validateRegistrationGroups} from '../lib/registration.mjs';
+import {formatEventDate,validateRegistrationGroups,registrationMessage} from '../lib/registration.mjs';
 validateRegistrationGroups(groups,events);
 ---
 <Base title="Register for PLEXUS ’27" desc="Explore workshop combos, academics, culturals and online event registration for PLEXUS ’27.">
@@ -20,12 +20,13 @@ validateRegistrationGroups(groups,events);
           <h3>{item.title}</h3>
           <time datetime={group.date}>{formatEventDate(group.date,true)}</time>
           <div class="registration-actions">
-            {item.registrationUrl ? <a class="register-action" href={item.registrationUrl}>Register Now<span class="sr-only"> for {item.title} on Google Forms</span></a> : <button class="register-action" type="button" disabled aria-label={'Register Now for '+item.title+' — link coming soon'} title="Registration link coming soon">Register Now</button>}
+            {item.registrationUrl ? <a class="register-action" href={item.registrationUrl}>Register Now<span class="sr-only"> for {item.title} on Google Forms</span></a> : <button class="register-action" type="button" disabled aria-label={'Register Now for '+item.title+' — '+registrationMessage(item)} title={registrationMessage(item)}>Register Now</button>}
             {item.detailsUrl ? <a class="details-action" href={item.detailsUrl}>View Details<span class="sr-only"> for {item.title}</span></a> : <button class="details-action" type="button" disabled aria-label={'View Details for '+item.title+' — link coming soon'} title="Details link coming soon">View Details</button>}
           </div>
+          {!item.registrationUrl && <p class="small" role="note">{registrationMessage(item)}</p>}
         </article>)}
       </div>
     </section>)}
-    <p class="registration-note">Event details and registration links are coming soon. Registration will continue on Google Forms when links are available.</p>
+    <p class="registration-note">Registration continues on Google Forms for your selected event or workshop combo. Basic Life Support + Heart Sounds and Medical Quiz registration are temporarily unavailable while their form links are being repaired.</p>
   </div>
 </Base>

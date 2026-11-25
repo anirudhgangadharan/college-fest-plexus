@@ -1,5 +1,13 @@
 import {validForm} from '../../scripts/validate.mjs';
 
+export function registrationForEvent(groups, slug) {
+  return groups.flatMap(group => group.items).find(item => item.eventSlugs.includes(slug));
+}
+
+export function registrationMessage(item) {
+  return item?.unavailableReason || 'Registration link coming soon';
+}
+
 export function formatEventDate(value, short = false) {
   return new Intl.DateTimeFormat('en-GB', {day:'numeric', month:short?'short':'long', year:'numeric', timeZone:'Asia/Kolkata'}).format(new Date(value+'T12:00:00+05:30'));
 }
@@ -21,6 +29,8 @@ export function validateRegistrationGroups(groups, events) {
         dates.set(slug, group.date);
       }
       if (item.registrationUrl !== null && !validForm(item.registrationUrl)) throw Error('Invalid registration form: '+item.id);
+      if (item.suppliedRegistrationUrl && !validForm(item.suppliedRegistrationUrl)) throw Error('Invalid supplied form: '+item.id);
+      if (item.registrationUrl && item.unavailableReason) throw Error('Available registration has an unavailable reason: '+item.id);
       if (item.detailsUrl !== null && !/^\/[^/]/.test(item.detailsUrl)) throw Error('Details must use a site-relative path or null: '+item.id);
     }
   }

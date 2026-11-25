@@ -89,3 +89,6 @@ Usability goal: a first-time mobile visitor can locate a suitable event and iden
 Owner must approve final festival/institution branding, dates and duration, program and spellings, venue, fees and eligibility, deadlines, forms and their access settings, contacts, image/logo rights, and final public copy. Organizers must clarify whether registration is festival-wide, event-specific, combo-based, or a mixture. Hosting account/domain and maintenance owner remain undecided. Exported Canva text-free assets, original logo, and font identification are requested when available, but are not prerequisites for a local prototype.
 
 A clearly labelled preview may contain missing details. Public launch requires final core identity/date/venue/contact sign-off and valid forms for any event marked open. A public information-only launch with registration pending requires an explicit owner decision. Do not silently turn a preview into an official announcement.
+
+## Registration update — 25 November 2026
+Owner approved supplied event-specific Google Forms and publication. Thirteen matching forms are available in the signed-in browser. BLS form is missing and Medical Quiz is under repair; both remain visibly unavailable. General registration navigation opens the event directory. Do not infer anonymous availability or successful submission from form-title checks.

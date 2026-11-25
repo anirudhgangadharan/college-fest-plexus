@@ -12,7 +12,9 @@
           "hridaya-naada"
         ],
         "registrationUrl": null,
-        "detailsUrl": "/events/basic-life-support-heart-sounds/"
+        "detailsUrl": "/events/basic-life-support-heart-sounds/",
+        "suppliedRegistrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd1KUzpfhui3-EOLAjZAylLcXfzjcVHjuVp0ygijKj7zxLvw/viewform",
+        "unavailableReason": "Registration temporarily unavailable — form link needs correction."
       },
       {
         "id": "basic-surgical-skills-ecg",
@@ -21,7 +23,7 @@
           "shastrakriya",
           "hridaya-rekha"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf2XMNYB7tjoF8HPrHyMuywR9yDToV_HLbo67Q0EWbkCwh-rQ/viewform",
         "detailsUrl": "/events/basic-surgical-skills-ecg-interpretation/"
       },
       {
@@ -31,7 +33,7 @@
           "janani-raksha",
           "navaprana"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfPxzvHoQ6TS_OAtjz31WWdMsQdZaGh7DPyYin3Q5FzocOgUw/viewform",
         "detailsUrl": "/events/obstetric-emergencies-neonatal-resuscitation/"
       },
       {
@@ -41,7 +43,7 @@
           "jeeva-raksha",
           "antardrishti"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdyxqPpEOek5mPAqU98Vb24rVd90Rjcmax0hje8cU5Nh8z9wA/viewform",
         "detailsUrl": "/events/basic-trauma-life-support-x-ray-interpretation/"
       }
     ]
@@ -57,7 +59,7 @@
         "eventSlugs": [
           "research-paper-presentation"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfTxNLeNf54ApbEhRXo1uUhVeBoqRtJd04hakc5RYCgvv4QJA/viewform",
         "detailsUrl": "/events/research-paper-presentation/"
       },
       {
@@ -66,7 +68,7 @@
         "eventSlugs": [
           "poster-presentation"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnijoMD878HuhLtJgw-EUu0QSAaHwIX3oVWwspbx8e2T33rQ/viewform",
         "detailsUrl": "/events/poster-presentation/"
       },
       {
@@ -75,7 +77,7 @@
         "eventSlugs": [
           "clinical-case-presentation"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdv2pHy8PMrf27p3B_CLFGdVfEF0_EWWK5teBS-K9EgHW3evQ/viewform",
         "detailsUrl": "/events/clinical-case-presentation/"
       },
       {
@@ -85,7 +87,8 @@
           "medical-quiz"
         ],
         "registrationUrl": null,
-        "detailsUrl": "/events/medical-quiz/"
+        "detailsUrl": "/events/medical-quiz/",
+        "unavailableReason": "Registration temporarily unavailable — form being repaired."
       }
     ]
   },
@@ -100,7 +103,7 @@
         "eventSlugs": [
           "solo-dance"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfp5E9mGatsOZUNFJ212a639TeZo3rOsvyVJfMhcpv8RT10KQ/viewform",
         "detailsUrl": "/events/solo-dance/"
       },
       {
@@ -109,7 +112,7 @@
         "eventSlugs": [
           "duet-group-dance"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdgb5wmjnfNHOWi7v-E538UXUo_gGkGpA4jPNvHp-9IJYBDHw/viewform",
         "detailsUrl": "/events/duet-group-dance/"
       },
       {
@@ -118,7 +121,7 @@
         "eventSlugs": [
           "solo-singing"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeEIoJVD0ZdmMr0FOxmCdDArM0pjEZvcoxOWg4DGQXtwgzDTQ/viewform",
         "detailsUrl": "/events/solo-singing/"
       },
       {
@@ -127,7 +130,7 @@
         "eventSlugs": [
           "medicos-got-talent"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdc4MjL12yYbQsPfDwr_DmasdsR-T9ApG8ExI4KFCuELGXlfw/viewform",
         "detailsUrl": "/events/medicos-got-talent/"
       }
     ]
@@ -143,7 +146,7 @@
         "eventSlugs": [
           "medical-meme-making"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScQvraT3BbcvriDOPh7xmtN7kdXMqdrpE_xxbmU8eHBmapdTQ/viewform",
         "detailsUrl": "/events/medical-meme-making/"
       },
       {
@@ -152,7 +155,7 @@
         "eventSlugs": [
           "medical-photography"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScsHkE7tLNngb7C2Znqx9E1rIBjn5cpBA2OV7fE5rqAY66FVg/viewform",
         "detailsUrl": "/events/medical-photography/"
       },
       {
@@ -161,7 +164,7 @@
         "eventSlugs": [
           "medical-reel-making"
         ],
-        "registrationUrl": null,
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeraDj2q8diVfOF_qBRqU89hSPviopO4-9momb9CqKcBujgjg/viewform",
         "detailsUrl": "/events/medical-reel-making/"
       }
     ]

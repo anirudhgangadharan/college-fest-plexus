@@ -89,3 +89,6 @@ Live: https://college-fest-plexus.vercel.app/ and /register/. Implementation c00
 ## Published event artwork — 25 November 2026
 
 The eight-painting update is now published at https://college-fest-plexus.vercel.app/events/. Artwork commit 55e6618 is on GitHub deploy-clean; Vercel deployment dpl_5AfwQwGK5Fr4qfua4pdMcwNmNp4v is READY. Production catalog HTTP 200 and new artwork paths verified. This supersedes the local-only status at the beginning of this file.
+
+## Event registration links — 25 November 2026
+Edit registrationUrl in src/content/registration-events.json; directory and event-detail buttons share that mapping. Thirteen supplied forms are active. BLS points to a missing Google form and stays inactive (original saved as suppliedRegistrationUrl); Medical Quiz awaits repair. Clear unavailableReason when replacing a broken form URL. General Register links open /register/. Signed-in form titles checked; submission not attempted; uploads may require Google sign-in.

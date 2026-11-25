@@ -1,5 +1,6 @@
 ---
-import reg from '../content/registration.json';
-const {form,label}=Astro.props;const r=reg.forms[form];const url=r&&r.url;
+import {registrationMessage} from '../lib/registration.mjs';
+const {registration,label}=Astro.props;
+const url=registration?.registrationUrl;
 ---
-{url?<a class="btn gold" href={url} rel="noopener" target="_blank">{label||'Register on Google Forms'} ↗</a>:<span class="btn off" role="note" aria-disabled="true">Form opens soon</span>}
+{url?<a class="btn gold" href={url}>{label||'Register on Google Forms'}</a>:<span class="btn off" role="note" aria-disabled="true">{registrationMessage(registration)}</span>}

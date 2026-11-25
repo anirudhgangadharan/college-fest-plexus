@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {validateRegistrationGroups,formatEventDate} from '../src/lib/registration.mjs';
+import {validateRegistrationGroups,formatEventDate,registrationForEvent,registrationMessage} from '../src/lib/registration.mjs';
 const groups=()=>JSON.parse(fs.readFileSync('src/content/registration-events.json'));
 const events=()=>JSON.parse(fs.readFileSync('src/content/events.json'));
 
@@ -10,7 +10,7 @@ test('registration covers all events once, in the four approved workshop pairs',
   assert.deepEqual(g.map(x=>x.items.length),[4,4,4,3]);
   assert.equal(g.flatMap(x=>x.items.flatMap(i=>i.eventSlugs)).length,events().length);
   assert.deepEqual(g[0].items.map(x=>x.eventSlugs.length),[2,2,2,2]);
-  assert.ok(g[0].items.every(i=>i.registrationUrl===null && i.detailsUrl?.startsWith('/events/')));
+  assert.ok(g[0].items.every(i=>i.detailsUrl?.startsWith('/events/')));
   assert.ok(g.flatMap(group=>group.items).every(item=>item.detailsUrl?.startsWith('/events/')));
 });
 test('date labels agree with event details and use the approved January dates',()=>{
@@ -33,5 +33,24 @@ test('invalid references, duplicate IDs, impossible dates and unsafe destination
 });
 test('individual Google Forms and site-relative details can be configured later',()=>{
   const g=groups();g[0].items[0].registrationUrl='https://forms.gle/example';g[0].items[0].detailsUrl='/events/basic-life-support-heart-sounds/';
+  delete g[0].items[0].unavailableReason;
   assert.doesNotThrow(()=>validateRegistrationGroups(g,events()));
+});
+
+test('available forms resolve through both workshop members and individual events',()=>{
+  const g=groups(); const items=g.flatMap(group=>group.items);
+  assert.equal(items.filter(item=>item.registrationUrl).length,13);
+  assert.equal(new Set(items.filter(item=>item.registrationUrl).map(item=>item.registrationUrl)).size,13);
+  for(const item of items) for(const slug of item.eventSlugs) {
+    assert.equal(registrationForEvent(g,slug),item);
+  }
+  const bls=registrationForEvent(g,'prana-raksha');
+  assert.equal(bls.registrationUrl,null);
+  assert.match(bls.suppliedRegistrationUrl,/docs.google.com/);
+  assert.match(registrationMessage(bls),/needs correction/);
+  const quiz=registrationForEvent(g,'medical-quiz');
+  assert.equal(quiz.registrationUrl,null);
+  assert.match(registrationMessage(quiz),/form being repaired/);
+  const changed=structuredClone(g);changed[1].items[3].registrationUrl=items[1].registrationUrl;
+  assert.throws(()=>validateRegistrationGroups(changed,events()),/unavailable reason/);
 });
