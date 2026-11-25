@@ -1,8 +1,8 @@
 {
   "enabled": true,
-  "status": "pending",
-  "url": null,
-  "organizerVerified": false,
+  "status": "open",
+  "url": "https://forms.gle/FJHof3Yb1JjoNgrd8",
+  "organizerVerified": true,
   "label": "Register for Accommodation",
   "pendingLabel": "Accommodation registration · Link coming soon"
 }
