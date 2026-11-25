@@ -15,9 +15,9 @@ test('registration covers all events once, in the four approved workshop pairs',
 });
 test('date labels agree with event details and use the approved January dates',()=>{
   const g=groups(); const all=events();
-  assert.deepEqual(g.map(x=>x.date),['2027-01-06','2027-01-07','2027-01-07','2027-01-07']);
-  assert.equal(formatEventDate(g[0].date),'6 January 2027');
-  assert.equal(formatEventDate(g[1].date,true),'7 Jan 2027');
+  assert.deepEqual(g.map(x=>x.date),['2027-01-05','2027-01-06','2027-01-06','2027-01-06']);
+  assert.equal(formatEventDate(g[0].date),'5 January 2027');
+  assert.equal(formatEventDate(g[1].date,true),'6 Jan 2027');
   for(const group of g) for(const item of group.items) for(const slug of item.eventSlugs)
     assert.ok(all.find(e=>e.slug===slug).when.startsWith(formatEventDate(group.date)));
 });

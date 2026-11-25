@@ -1,3 +1,7 @@
+# Approved festival date shift — 25 November 2026
+
+Owner authorized shifting every website festival/event date one day earlier: 6→5, 7→6, 8→7 January 2027. Current festival dates are 5–7 January 2027. All workshop combos are 5 January; listed academic, cultural and online events are 6 January. This supersedes older date statements below. Registration URLs, fees and December deadlines are unchanged. Google Forms content is external and has not been edited. Historical schedule-before-date-update.json remains an archive, not a live content source.
+
 # Current scoped update — 24 November 2026
 
 Current owner authorization supersedes legacy checkpoints: on 24 November 2026 the owner approved implementing and publishing the registration popup/directory and Source Serif 4 on every page. Current festival identity is PLEXUS ’27, 5–7 January 2027. Approved event dates: workshops 6 January; listed academic/cultural/online events 7 January. Keep registrationUrl/detailsUrl null until supplied; blank destinations render inactive controls. Preserve the prior fees page at /registration-fees/. The broad flagship redesign remains deferred. Future changes must retain these scoped decisions unless the owner overrides them.

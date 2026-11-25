@@ -1,3 +1,7 @@
+# Approved festival date shift — 25 November 2026
+
+Owner authorized shifting every website festival/event date one day earlier: 6→5, 7→6, 8→7 January 2027. Current festival dates are 5–7 January 2027. All workshop combos are 5 January; listed academic, cultural and online events are 6 January. This supersedes older date statements below. Registration URLs, fees and December deadlines are unchanged. Google Forms content is external and has not been edited. Historical schedule-before-date-update.json remains an archive, not a live content source.
+
 # Event artwork — 25 November 2026
 
 - Authorized: owner said Execute after the eight-image replacement plan. Local integration and preview are authorized; publication is separate.
@@ -206,3 +210,6 @@ Browser verification: directory shows 13 active Google Forms links and 2 disable
 
 ## Registration publication evidence — 25 November 2026
 Implementation b0dbd49 pushed to origin/deploy-clean. Vercel deployment dpl_Ee8Kq2oUpwWj8MNwFshHu9WKkh2B returned READY and aliased https://college-fest-plexus.vercel.app. Live browser confirmed all thirteen supplied active hrefs, two disabled buttons and repair notices. Clicked Basic Surgical Skills View Details then Register on Google Forms: destination title matched Basic Surgical Skills + ECG Interpretation. No submission or payment performed. No temporary protection bypass created for verification.
+
+## Date-shift verification — 25 November 2026
+Implemented approved one-day shift across festival data, 19 event records, four registration groups, retained schedule data, homepage hero, catalog combo labels and combo headings. Shared footer, popup and default metadata inherit new content. npm run check passed; npm test 8/8 passed; npm run build generated 21 pages; internal links audit found zero broken links. All 21 HTML pages audited for updated festival footer and absence of obsolete dates; all 15 detail routes match registration dates. Field comparison against HEAD confirms registration URLs, fees and other event fields unchanged. Historical reference assets/archived schedule preserved. Publication and live checks follow.

@@ -1,3 +1,7 @@
+# Approved festival date shift — 25 November 2026
+
+Owner authorized shifting every website festival/event date one day earlier: 6→5, 7→6, 8→7 January 2027. Current festival dates are 5–7 January 2027. All workshop combos are 5 January; listed academic, cultural and online events are 6 January. This supersedes older date statements below. Registration URLs, fees and December deadlines are unchanged. Google Forms content is external and has not been edited. Historical schedule-before-date-update.json remains an archive, not a live content source.
+
 # Responsive event artwork — 25 November 2026
 
 Optional event fields `artwork` (safe filename key) and `artworkAlt` select generated paintings under public/art/events. EventArtwork.astro emits 400/800/1200 px WebP srcset, sizes, explicit 4:5 dimensions, lazy loading and async decoding; legacy art/img fields remain supported. Content validation checks all three derivatives. Masters and manifest remain outside public; scripts/prepare-event-art.py reproducibly resamples them with Pillow. No new runtime or package dependencies.

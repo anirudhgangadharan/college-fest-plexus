@@ -2,7 +2,7 @@
   {
     "id": "workshops",
     "title": "Workshops",
-    "date": "2027-01-06",
+    "date": "2027-01-05",
     "items": [
       {
         "id": "basic-life-support-heart-sounds",
@@ -51,7 +51,7 @@
   {
     "id": "academics",
     "title": "Academics",
-    "date": "2027-01-07",
+    "date": "2027-01-06",
     "items": [
       {
         "id": "research-paper",
@@ -95,7 +95,7 @@
   {
     "id": "culturals",
     "title": "Culturals",
-    "date": "2027-01-07",
+    "date": "2027-01-06",
     "items": [
       {
         "id": "solo-dance",
@@ -138,7 +138,7 @@
   {
     "id": "online",
     "title": "Online Events",
-    "date": "2027-01-07",
+    "date": "2027-01-06",
     "items": [
       {
         "id": "medical-meme-making",

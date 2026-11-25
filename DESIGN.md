@@ -1,3 +1,7 @@
+# Approved festival date shift — 25 November 2026
+
+Owner authorized shifting every website festival/event date one day earlier: 6→5, 7→6, 8→7 January 2027. Current festival dates are 5–7 January 2027. All workshop combos are 5 January; listed academic, cultural and online events are 6 January. This supersedes older date statements below. Registration URLs, fees and December deadlines are unchanged. Google Forms content is external and has not been edited. Historical schedule-before-date-update.json remains an archive, not a live content source.
+
 # Event artwork update — 25 November 2026
 
 Owner-authorized eight academic/cultural paintings match uploaded workshop references: finely painted Renaissance figures, amber light, burgundy/umber/ivory fabrics and quiet olive backgrounds. Cultural subjects retain Indian performance context. Images fill the existing 4:5 card frame; typography, palette tokens, layout, workshop and online art remain intact. See artwork/README.md for provenance and preservation. Local integration only; publication awaits separate approval for this change.
