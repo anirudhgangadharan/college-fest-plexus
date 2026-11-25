@@ -85,3 +85,7 @@ Install CLI with `npm install -g vercel`, then run `vercel` and link/create the 
 ## Published registration update — 24 November 2026
 
 Live: https://college-fest-plexus.vercel.app/ and /register/. Implementation c00cad0 is on deploy-clean and Vercel production returned READY. Local verification: content check, 7 tests, 27-page build, generated link/asset audit and responsive browser checks. Live popup/directory/font verified. Details and form destinations remain null by owner request. See TASKS.md for evidence and limits; earlier instructions to push main or obtain launch authorization are historical and superseded for this scoped publication.
+
+## Published event artwork — 25 November 2026
+
+The eight-painting update is now published at https://college-fest-plexus.vercel.app/events/. Artwork commit 55e6618 is on GitHub deploy-clean; Vercel deployment dpl_5AfwQwGK5Fr4qfua4pdMcwNmNp4v is READY. Production catalog HTTP 200 and new artwork paths verified. This supersedes the local-only status at the beginning of this file.

@@ -191,3 +191,7 @@ Implementation commit c00cad0 pushed to deploy-clean. Vercel production deployme
 
 ## Artwork publication authorization — 25 November 2026
 Owner approved the visual result and explicitly requested GitHub push and Vercel deployment. This supersedes the separate-approval pending state above. Publishing the current local artwork implementation; live verification follows deployment.
+
+## Artwork publication evidence — 25 November 2026
+
+Owner approved GitHub and Vercel publication. Artwork commit 55e661838d87da4931661d9dcb38ced8cb6835dc is confirmed on origin/deploy-clean. Vercel deployment dpl_5AfwQwGK5Fr4qfua4pdMcwNmNp4v returned READY and aliased https://college-fest-plexus.vercel.app. A production HTTP request returned 200 and confirmed all eight new artwork paths in catalog HTML; authenticated Vercel verification also confirmed the new art. The temporary automation protection bypass created by Vercel curl was revoked and zero remaining bypasses verified. Exact phone-width QA remains pending as previously recorded.
